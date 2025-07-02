@@ -35,22 +35,6 @@ h4 {
   font-size: 1.25rem; /* ~20px */
 }
 
-/* Portfolio-specific */
-.portfolio-section h2 {
-  font-weight: 700;
-}
-
-.portfolio-content h4 {
-  font-weight: 600;
-}
-
-.portfolio-content p {
-  font-weight: 400;
-  font-size: 0.95rem;
-  color: #555;
-}
-
-/* skills section styles */
 .icon-box {
   width: 60px;
   height: 60px;
@@ -68,5 +52,6 @@ h4 {
 
 .skill-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 20px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
 }
