@@ -62,3 +62,17 @@ h4 {
   border-radius: 50%;
   object-fit: cover;
 }
+
+/* portfolio section style */
+.mobile-overlay {
+  height: 85%;
+  width: auto;
+  max-width: 30%;
+  object-fit: cover;
+  z-index: 2;
+  border: 2px solid #fff;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  transform: rotate(15deg);
+  border-radius: 6px;
+  margin: 1rem;
+}

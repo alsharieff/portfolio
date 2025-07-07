@@ -349,64 +349,49 @@
             </div>
           </div>
         </div>
+
         <div class="row">
-          <div class="col-md-6 col-lg-4">
-            <div class="portfolio-item">
-              <img
-                src="img/portfolio/isay-portfolio.jpg"
-                class="w-100 img-thumbnail"
-                alt="portfolio img"
-              />
+          <!-- First Project with Overlay -->
+          <div class="col-lg-6">
+            <div class="portfolio-item position-relative">
+              <div class="position-relative">
+                <!-- Overlay: Mobile View -->
+                <img
+                  src="img/isay.jpg"
+                  alt="mobile design"
+                  class="position-absolute top-0 end-0 mobile-overlay"
+                />
+
+                <!-- Parent: Desktop View -->
+                <img
+                  src="img/portfolio/isay-portfolio.jpg"
+                  class="w-100 img-thumbnail"
+                  alt="desktop design"
+                />
+
+                <!-- Labels -->
+                <span
+                  class="badge bg-secondary position-absolute start-0 top-0 m-2"
+                  >Desktop View</span
+                >
+                <span class="badge bg-primary position-absolute end-0 top-0 m-2"
+                  >Mobile View</span
+                >
+              </div>
               <h3 class="fs-5 text-capitalize my-2">simple portfolio</h3>
               <p>
                 <button type="button" class="btn btn-primary">
                   <a
                     href="https://sites.google.com/view/isaydelmonteportfolio/home"
                     class="text-capitalize text-white text-decoration-none"
-                    >see more</a
                   >
+                    see more
+                  </a>
                 </button>
               </p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="portfolio-item">
-              <img
-                src="img/portfolio/latest-football-news.jpg"
-                class="w-100 img-thumbnail"
-                alt="portfolio img"
-              />
-              <h3 class="fs-5 text-capitalize my-2">sports news blog</h3>
-              <p>
-                <button type="button" class="btn btn-primary">
-                  <a
-                    href="https://latestfootball.news/"
-                    class="text-capitalize text-white text-decoration-none"
-                    >see more</a
-                  >
-                </button>
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="portfolio-item">
-              <img
-                src="img/portfolio/jackpot-lottery-result.jpg"
-                class="w-100 img-thumbnail"
-                alt="portfolio img"
-              />
-              <h3 class="fs-5 text-capitalize my-2">lottery blog</h3>
-              <p>
-                <button type="button" class="btn btn-primary">
-                  <a
-                    href="https://jackpotlotteryresult.today/"
-                    class="text-capitalize text-white text-decoration-none"
-                    >see more</a
-                  >
-                </button>
-              </p>
-            </div>
-          </div>
+          <!-- Additional Cards -->
         </div>
       </div>
     </section>
