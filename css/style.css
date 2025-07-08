@@ -3,8 +3,8 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px; /* Base size */
   line-height: 1.6;
-  color: #333;
-  background-color: #fff;
+  color: #111;
+  background-color: #ccc;
 }
 
 /* Headings */
@@ -17,22 +17,6 @@ h6 {
   font-weight: 600;
   line-height: 1.2;
   color: #111;
-}
-
-h1 {
-  font-size: 2.5rem; /* ~40px */
-}
-
-h2 {
-  font-size: 2rem; /* ~32px */
-}
-
-h3 {
-  font-size: 1.5rem; /* ~24px */
-}
-
-h4 {
-  font-size: 1.25rem; /* ~20px */
 }
 
 /* skills section style */
