@@ -409,92 +409,88 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-4">
-            <div class="portfolio-item position-relative">
-              <div class="position-relative">
-                <img
-                  src="img/portfolio/football-mobile.jpg"
-                  alt="mobile design"
-                  class="position-absolute top-0 end-0 mobile-overlay"
-                />
-                <img
-                  src="img/portfolio/latest-football-news.jpg"
-                  class="w-100 img-thumbnail"
-                  alt="desktop design"
-                />
-              </div>
+
+        <!-- Auto-Playing Carousel -->
+        <div class="carousel-wrapper">
+          <div class="d-flex" id="portfolio-carousel">
+            <div class="portfolio-item me-3 position-relative">
+              <img
+                src="img/portfolio/football-mobile.jpg"
+                class="position-absolute top-0 end-0 mobile-overlay"
+                alt="mobile design"
+              />
+              <img
+                src="img/portfolio/latest-football-news.jpg"
+                class="w-100 img-thumbnail"
+                alt="desktop design"
+              />
               <h3 class="fs-5 text-capitalize my-2">football sports blogs</h3>
-              <p>
-                <button type="button" class="btn btn-primary">
-                  <a
-                    href="https://latestfootball.news/"
-                    class="text-capitalize text-white text-decoration-none"
-                  >
-                    see more
-                  </a>
-                </button>
-              </p>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="portfolio-item position-relative">
-              <div class="position-relative">
-                <img
-                  src="img/portfolio/jackpot-mobile.jpg"
-                  alt="mobile design"
-                  class="position-absolute top-0 end-0 mobile-overlay"
-                />
-                <img
-                  src="img/portfolio/jackpot-desktop.jpg"
-                  class="w-100 img-thumbnail"
-                  alt="desktop design"
-                />
-              </div>
+            <div class="portfolio-item me-3 position-relative">
+              <img
+                src="img/portfolio/jackpot-mobile.jpg"
+                class="position-absolute top-0 end-0 mobile-overlay"
+                alt="mobile design"
+              />
+              <img
+                src="img/portfolio/jackpot-desktop.jpg"
+                class="w-100 img-thumbnail"
+                alt="desktop design"
+              />
               <h3 class="fs-5 text-capitalize my-2">lottery casino blog</h3>
-              <p>
-                <button type="button" class="btn btn-primary">
-                  <a
-                    href="https://jackpotlotteryresult.today/"
-                    class="text-capitalize text-white text-decoration-none"
-                  >
-                    see more
-                  </a>
-                </button>
-              </p>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="portfolio-item position-relative">
-              <div class="position-relative">
-                <img
-                  src="img/portfolio/portfolio-mobile.jpg"
-                  alt="mobile design"
-                  class="position-absolute top-0 end-0 mobile-overlay"
-                />
-                <img
-                  src="img/portfolio/portfolio-desktop.jpg"
-                  class="w-100 img-thumbnail"
-                  alt="desktop design"
-                />
-              </div>
+            <div class="portfolio-item me-3 position-relative">
+              <img
+                src="img/portfolio/portfolio-mobile.jpg"
+                class="position-absolute top-0 end-0 mobile-overlay"
+                alt="mobile design"
+              />
+              <img
+                src="img/portfolio/portfolio-desktop.jpg"
+                class="w-100 img-thumbnail"
+                alt="desktop design"
+              />
               <h3 class="fs-5 text-capitalize my-2">portfolio</h3>
-              <p>
-                <button type="button" class="btn btn-primary">
-                  <a
-                    href="https://sites.google.com/view/isaydelmonteportfolio/home"
-                    class="text-capitalize text-white text-decoration-none"
-                  >
-                    see more
-                  </a>
-                </button>
-              </p>
             </div>
+            <!-- Add more items here -->
           </div>
-          <!-- Additional Cards -->
+        </div>
+
+        <!-- Main See More Button -->
+        <div class="text-center mt-4">
+          <button class="btn btn-primary" id="seeMoreModalBtn">See More</button>
         </div>
       </div>
     </section>
+    <!-- portfolio section end -->
+
+    <!-- Modal for See More -->
+    <div
+      class="modal fade"
+      id="portfolioModal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div
+          class="modal-content"
+          style="max-height: 90vh; overflow-y: auto; overflow-x: hidden"
+        >
+          <div class="modal-header">
+            <h5 class="modal-title">All Projects</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-3" id="allProjects"></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- portfolio section end -->
 
     <!-- contact section start -->
