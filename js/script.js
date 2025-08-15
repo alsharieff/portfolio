@@ -26,7 +26,7 @@ tabs.forEach((tab) => {
   });
 });
 
-// project
+// project section
 const carousel = document.getElementById("portfolio-carousel");
 
 // Duplicate items for seamless infinite scroll
@@ -77,6 +77,192 @@ smoothAutoScroll();
 // Projects data for modal
 const projects = [
   {
+    title: "Jackpot Reviews",
+    desktop: "img/portfolio/desk-jackpotreviews.avif",
+    mobile: "img/portfolio/mob-jackpotreviews.avif",
+    link: "https://jackpotreviews.online/",
+  },
+  {
+    title: "Casino Prophet",
+    desktop: "img/portfolio/desk-casinoprophet.avif",
+    mobile: "img/portfolio/mob-casinoprophet.avif",
+    link: "https://casinoprophet.online/public/",
+  },
+  {
+    title: "Sports Odds",
+    desktop: "img/portfolio/desk-thesportsodds.avif",
+    mobile: "img/portfolio/mob-thesportsodds.avif",
+    link: "https://thesportsodds.online/",
+  },
+  {
+    title: "Fortune Mobile",
+    desktop: "img/portfolio/desk-fortunemobile.avif",
+    mobile: "img/portfolio/mob-fortunemobile.avif",
+    link: "https://fortunemobilegames.online/",
+  },
+  {
+    title: "82Lottery",
+    desktop: "img/portfolio/desk-82lottery.avif",
+    mobile: "img/portfolio/mob-82lottery.avif",
+    link: "https://82lotterygames.online/",
+  },
+  {
+    title: "King Of Sports",
+    desktop: "img/portfolio/desk-kingofsports.avif",
+    mobile: "img/portfolio/mob-kingofsports.avif",
+    link: "https://kingofsportsgames.online/",
+  },
+  {
+    title: "Vbet",
+    desktop: "img/portfolio/desk-vbet.avif",
+    mobile: "img/portfolio/mob-vbet.avif",
+    link: "https://vbetcasinogames.online/",
+  },
+  {
+    title: "YetiCasino",
+    desktop: "img/portfolio/desk-yeticasino.avif",
+    mobile: "img/portfolio/mob-yeticasino.avif",
+    link: "https://yeticasinogames.online/",
+  },
+  {
+    title: "Bcasino",
+    desktop: "img/portfolio/desk-bcasino.avif",
+    mobile: "img/portfolio/mob-bcasino.avif",
+    link: "https://bcasinogames.online/",
+  },
+  {
+    title: "Grandivy",
+    desktop: "img/portfolio/desk-grandivy.avif",
+    mobile: "img/portfolio/mob-grandivy.avif",
+    link: "https://grandivygames.online/",
+  },
+  {
+    title: "Yaa Casino",
+    desktop: "img/portfolio/desk-yaacasino.avif",
+    mobile: "img/portfolio/mob-yaacasino.avif",
+    link: "https://yaacasinogames.online/",
+  },
+  {
+    title: "Playboom",
+    desktop: "img/portfolio/desk-playboom.avif",
+    mobile: "img/portfolio/mob-playboom.avif",
+    link: "https://playboom24kgames.online/",
+  },
+  {
+    title: "Paripesa",
+    desktop: "img/portfolio/desk-paripesa.avif",
+    mobile: "img/portfolio/mob-paripesa.avif",
+    link: "https://paripesagames.online/",
+  },
+  {
+    title: "Slot Planet",
+    desktop: "img/portfolio/desk-slotplanet.avif",
+    mobile: "img/portfolio/mob-slotplanet.avif",
+    link: "https://slotplanetgames.online/",
+  },
+  {
+    title: "21Casino",
+    desktop: "img/portfolio/desk-21casino.avif",
+    mobile: "img/portfolio/mob-21casino.avif",
+    link: "https://21casinogames.online/",
+  },
+  {
+    title: "Betobet",
+    desktop: "img/portfolio/desk-betobet.avif",
+    mobile: "img/portfolio/mob-betobet.avif",
+    link: "https://betobetgames.online/",
+  },
+  {
+    title: "Betkwiff",
+    desktop: "img/portfolio/desk-betkwiff.avif",
+    mobile: "img/portfolio/mob-betkwiff.avif",
+    link: "https://betkwiffgames.online/",
+  },
+  {
+    title: "Mrplay",
+    desktop: "img/portfolio/desk-mrplay.avif",
+    mobile: "img/portfolio/mob-mrplay.avif",
+    link: "https://mrplaycasinogames.online/",
+  },
+  {
+    title: "Melbet",
+    desktop: "img/portfolio/desk-melbet.avif",
+    mobile: "img/portfolio/mob-melbet.avif",
+    link: "https://melbetjiligames.online/",
+  },
+  {
+    title: "Queenplay",
+    desktop: "img/portfolio/desk-queenplay.avif",
+    mobile: "img/portfolio/mob-queenplay.avif",
+    link: "https://queenplaygames.online/",
+  },
+  {
+    title: "Regent",
+    desktop: "img/portfolio/desk-regent.avif",
+    mobile: "img/portfolio/mob-regent.avif",
+    link: "https://regentgames.online/",
+  },
+  {
+    title: "Shangrila",
+    desktop: "img/portfolio/desk-shangrila.avif",
+    mobile: "img/portfolio/mob-shangrila.avif",
+    link: "https://shangrilagames.online/",
+  },
+  {
+    title: "Spinrio",
+    desktop: "img/portfolio/desk-spinrio.avif",
+    mobile: "img/portfolio/mob-spinrio.avif",
+    link: "https://spinriogames.online/",
+  },
+  {
+    title: "24Bet",
+    desktop: "img/portfolio/desk-24bet.avif",
+    mobile: "img/portfolio/mob-24bet.avif",
+    link: "https://24betgames.online/",
+  },
+  {
+    title: "Weltbet",
+    desktop: "img/portfolio/desk-weltbet.avif",
+    mobile: "img/portfolio/mob-weltbet.avif",
+    link: "https://weltbetgames.online/",
+  },
+  {
+    title: "Spinyoo",
+    desktop: "img/portfolio/desk-spinyoo.avif",
+    mobile: "img/portfolio/mob-spinyoo.avif",
+    link: "https://spinyoogames.online/",
+  },
+  {
+    title: "Lalabet",
+    desktop: "img/portfolio/desk-lalabet.avif",
+    mobile: "img/portfolio/mob-lalabet.avif",
+    link: "https://lalabetcasinogames.online/",
+  },
+  {
+    title: "QBet",
+    desktop: "img/portfolio/desk-qbet.avif",
+    mobile: "img/portfolio/mob-qbet.avif",
+    link: "https://qbetcasinogames.online/",
+  },
+  {
+    title: "Betspino",
+    desktop: "img/portfolio/desk-betspino.avif",
+    mobile: "img/portfolio/mob-betspino.avif",
+    link: "https://betspinogames.online/",
+  },
+  {
+    title: "Heycasino",
+    desktop: "img/portfolio/desk-heycasino.avif",
+    mobile: "img/portfolio/mob-heycasino.avif",
+    link: "https://heycasinogames.online/",
+  },
+  {
+    title: "Zotabet",
+    desktop: "img/portfolio/desk-zotabet.avif",
+    mobile: "img/portfolio/mob-zotabet.avif",
+    link: "https://zotabetgames.online/",
+  },
+  {
     title: "football sports blogs",
     desktop: "img/portfolio/latest-football-news.jpg",
     mobile: "img/portfolio/football-mobile.jpg",
@@ -87,12 +273,6 @@ const projects = [
     desktop: "img/portfolio/jackpot-desktop.jpg",
     mobile: "img/portfolio/jackpot-mobile.jpg",
     link: "https://jackpotlotteryresult.today/",
-  },
-  {
-    title: "portfolio",
-    desktop: "img/portfolio/portfolio-desktop.jpg",
-    mobile: "img/portfolio/portfolio-mobile.jpg",
-    link: "#",
   },
 ];
 
