@@ -26,7 +26,7 @@ tabs.forEach((tab) => {
   });
 });
 
-// project section
+// portfolio section
 const carousel = document.getElementById("portfolio-carousel");
 
 // Duplicate items for seamless infinite scroll
