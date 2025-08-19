@@ -7,7 +7,6 @@ const images = {
   tab2: "img/z-wordpress-dev.avif",
   tab3: "img/z-content.avif",
   tab4: "img/z-link-building.avif",
-  tab5: "img/z-keyword.avif",
 };
 
 tabs.forEach((tab) => {
