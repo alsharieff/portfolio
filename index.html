@@ -20,9 +20,9 @@
     />
     <meta
       property="og:image"
-      content="https://yourdomain.com/img/preview.jpg"
+      content="https://alsharieff.github.io/portfolio/img/preview.jpg"
     />
-    <meta property="og:url" content="https://yourdomain.com/" />
+    <meta property="og:url" content="https://alsharieff.github.io/portfolio/" />
     <meta property="og:type" content="website" />
 
     <!-- Favicon -->
@@ -86,6 +86,9 @@
                   src="img/featured.avif"
                   class="img-fluid"
                   alt="Profile Image"
+                  loading="lazy"
+                  width="400"
+                  height="400"
                 />
               </div>
             </div>
@@ -321,6 +324,7 @@
               id="featureImage"
               class="feature-img"
               alt="Feature Image"
+              loading="lazy"
             />
           </div>
           <!-- Right column: content -->
@@ -880,54 +884,229 @@
       <div class="container-lg py-4 text-center">
         <h2 class="fw-bold mb-5">Certifications</h2>
 
-        <div class="row justify-content-center">
-          <!-- Certification Item Template -->
-          <div class="col-md-8 col-lg-6">
+        <div class="row justify-content-center g-4" id="certifications-grid">
+          <!-- Certificate 1 -->
+          <div class="col-12 col-sm-6 col-lg-4">
             <div
-              class="cert-card p-4 h-100 text-center"
-              style="
-                border: 1px solid #ddd;
-                border-radius: 12px;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-                background-color: #fff;
-              "
+              class="cert-card p-4 h-100 text-center border rounded shadow-sm bg-white"
             >
-              <h3 class="mb-3">Ahrefs SEO Certification</h3>
+              <h3 class="mb-3 fs-5">Ahrefs SEO Certification</h3>
               <p class="mb-4">
-                I'm proud to have completed the
-                <strong>Ahrefs SEO Certification</strong>, demonstrating my
-                expertise in SEO, keyword research, backlink analysis, and
-                content optimization.
+                Completed Ahrefs SEO Certification, mastering keyword research,
+                backlink analysis, and SEO fundamentals.
               </p>
-              <div>
-                <a
-                  href="https://ahrefs.com/academy/certificate/37ff30dc5c304bf6a6675b4316a3b785"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="img/certification.jpg"
-                    alt="Ahrefs SEO Certification"
-                    style="
-                      max-width: 500px;
-                      width: 100%;
-                      height: auto;
-                      border: 1px solid #ddd;
-                      border-radius: 8px;
-                      display: inline-block;
-                      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-                    "
-                  />
-                </a>
-              </div>
+              <a
+                href="https://ahrefs.com/academy/certificate/37ff30dc5c304bf6a6675b4316a3b785"
+                target="_blank"
+              >
+                <img
+                  src="img/certification.jpg"
+                  alt="Ahrefs SEO Certification"
+                  class="img-fluid rounded shadow"
+                />
+              </a>
             </div>
           </div>
-          <!-- /Certification Item Template -->
 
-          <!-- Future certifications can be added by duplicating the col-md-8 col-lg-6 block -->
+          <!-- Certificate 2 -->
+          <div class="col-12 col-sm-6 col-lg-4 d-none d-sm-block">
+            <div
+              class="cert-card p-4 h-100 text-center border rounded shadow-sm bg-white"
+            >
+              <h3 class="mb-3 fs-5">Zuitt Bootcamp Certification</h3>
+              <p class="mb-4">
+                Go Code Bootcamp Completed a two-day workshop on building
+                responsive web profiles with HTML, CSS, and Bootstrap.
+              </p>
+              <a href="/assets/zuitt-bootcamp.pdf" target="_blank">
+                <img
+                  src="img/zuitt.png"
+                  alt="zuitt"
+                  class="img-fluid rounded shadow"
+                />
+              </a>
+            </div>
+          </div>
+
+          <!-- Certificate 3 -->
+          <div class="col-12 col-sm-6 col-lg-4 d-none d-lg-block">
+            <div
+              class="cert-card p-4 h-100 text-center border rounded shadow-sm bg-white"
+            >
+              <h3 class="mb-3 fs-5">Cisco DevNet Associate</h3>
+              <p class="mb-4">
+                Completed the DevNet Associate course demonstrating core
+                networking and automation skills.
+              </p>
+              <a href="/assets/cisco-devnet-associate.pdf" target="_blank">
+                <img
+                  src="img/devnet-associate.png"
+                  alt="DevNet Associate"
+                  class="img-fluid rounded shadow"
+                  style="border: 2px solid #ccc"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Show More Button -->
+        <div class="mt-4">
+          <button
+            class="btn btn-outline-dark"
+            data-bs-toggle="modal"
+            data-bs-target="#certModal"
+          >
+            Show More
+          </button>
         </div>
       </div>
     </section>
+
+    <!-- Modal for All Certifications -->
+    <div
+      class="modal fade"
+      id="certModal"
+      tabindex="-1"
+      aria-labelledby="certModalLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="certModalLabel">All Certifications</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row g-4">
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div
+                    class="cert-card p-4 h-100 text-center border rounded shadow-sm bg-white"
+                  >
+                    <h3 class="mb-3 fs-5">Ahrefs SEO Certification</h3>
+                    <a
+                      href="https://ahrefs.com/academy/certificate/37ff30dc5c304bf6a6675b4316a3b785"
+                      target="_blank"
+                    >
+                      <img
+                        src="img/certification.jpg"
+                        alt="Ahrefs SEO Certification"
+                        class="img-fluid rounded shadow"
+                      />
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div
+                    class="cert-card p-4 h-100 text-center border rounded shadow-sm bg-white"
+                  >
+                    <h3 class="mb-3 fs-5">Zuitt Bootcamp Certification</h3>
+                    <a href="/assets/zuitt-bootcamp.pdf" target="_blank">
+                      <img
+                        src="img/zuitt.png"
+                        alt="Ahrefs SEO Certification"
+                        class="img-fluid rounded shadow"
+                      />
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div
+                    class="cert-card p-4 h-100 text-center border rounded shadow-sm bg-white"
+                  >
+                    <h3 class="mb-3 fs-5">Cisco DevNet Associate</h3>
+                    <a
+                      href="/assets/cisco-devnet-associate.pdf"
+                      target="_blank"
+                    >
+                      <img
+                        src="img/devnet-associate.png"
+                        alt="Ahrefs SEO Certification"
+                        class="img-fluid rounded shadow"
+                        style="border: 2px solid #000"
+                      />
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div
+                    class="cert-card p-4 h-100 text-center border rounded shadow-sm bg-white"
+                  >
+                    <h3 class="mb-3 fs-5">
+                      Cisco Enterprise Networking, Security, and Automation
+                    </h3>
+                    <a
+                      href="/assets/cisco-enterprise-networking-security-and-automation.pdf"
+                      target="_blank"
+                    >
+                      <img
+                        src="img/cisco-enterprise.png"
+                        alt="cisco-enterprise"
+                        class="img-fluid rounded shadow"
+                        style="border: 2px solid #000"
+                      />
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div
+                    class="cert-card p-4 h-100 text-center border rounded shadow-sm bg-white"
+                  >
+                    <h3 class="mb-3 fs-5">
+                      Cisco Switching, Routing, and Wireless Essentials
+                    </h3>
+                    <a
+                      href="/assets/cisco-switching-routing-and-wireless-essentials.pdf"
+                      target="_blank"
+                    >
+                      <img
+                        src="img/cisco-switching.png"
+                        alt="cisco-switching"
+                        class="img-fluid rounded shadow"
+                        style="border: 2px solid #000"
+                      />
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div
+                    class="cert-card p-4 h-100 text-center border rounded shadow-sm bg-white"
+                  >
+                    <h3 class="mb-3 fs-5">Cisco Introduction to Networks</h3>
+                    <a
+                      href="/assets/cisco-introduction-to-networks.pdf"
+                      target="_blank"
+                    >
+                      <img
+                        src="img/cisco-ccnav7.png"
+                        alt="cisco-introduction"
+                        class="img-fluid rounded shadow"
+                        style="border: 2px solid #000"
+                      />
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Repeat similar cert blocks -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- certification section start -->
 
