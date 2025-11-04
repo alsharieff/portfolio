@@ -5,8 +5,9 @@ const featureImage = document.getElementById("featureImage");
 const images = {
   tab1: "img/z-web-dev.avif",
   tab2: "img/z-wordpress-dev.avif",
-  tab3: "img/z-content.avif",
-  tab4: "img/z-link-building.avif",
+  tab3: "img/z-web-dev.avif",
+  tab4: "img/z-content.avif",
+  tab5: "img/z-link-building.avif",
 };
 
 tabs.forEach((tab) => {
