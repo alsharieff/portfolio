@@ -82,6 +82,12 @@ smoothAutoScroll();
 // Projects data for modal
 const projects = [
   {
+    title: "Dental",
+    desktop: "img/portfolio/ohiofamilydentist.png",
+    mobile: "img/portfolio/mob-ohiofamilydentist.png",
+    link: "https://ohiofamilydentist.forgetechdigital.com/",
+  },
+  {
     title: "Jackpot Reviews",
     desktop: "img/portfolio/desk-jackpotreviews.avif",
     mobile: "img/portfolio/mob-jackpotreviews.avif",
