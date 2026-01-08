@@ -2,12 +2,25 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --bg-color: #edeff2;
+  --text-color: #111;
+  --accent-color: #4f46e5;
+  --button-color: #0860c4;
+  --tag-bg: #eef2ff;
+  --tag-color: #3730a3;
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  --shadow-medium: rgba(0, 0, 0, 0.08);
+  --shadow-dark: rgba(0, 0, 0, 0.12);
+  --shadow-darker: rgba(0, 0, 0, 0.15);
+}
+
 body {
-  background-color: #ccc;
-  color: #111;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   font-family: "Poppins", sans-serif;
-  font-size: 16px; /* Base size */
-  line-height: 1.6;
+  font-size: clamp(0.875rem, 1vw + 0.5rem, 1rem); /* 14px–16px */
+  line-height: 1.5;
 }
 
 h1,
@@ -18,7 +31,17 @@ h5,
 h6 {
   font-weight: 600;
   line-height: 1.2;
-  color: #111;
+  color: var(--text-color);
+}
+
+h1 {
+  font-size: clamp(2.25rem, 4vw + 0.5rem, 2.5rem); /* 36px–40px */
+}
+h2 {
+  font-size: clamp(1.75rem, 3vw + 0.5rem, 2rem); /* 28px–32px */
+}
+h3 {
+  font-size: clamp(1.25rem, 2vw + 0.5rem, 1.5rem); /* 20px–24px */
 }
 
 /* Header Style */
@@ -27,7 +50,7 @@ h6 {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* for Safari */
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px var(--shadow-light);
 }
 
 /* Hero Style */
@@ -36,7 +59,7 @@ h6 {
   min-height: 60vh;
 }
 
-@media (max-width: 76.98px) {
+@media (max-width: 768px) {
   .home-inner {
     min-height: 100vh;
   }
@@ -48,85 +71,135 @@ h6 {
   }
 }
 
-/* icon logo Style */
-.icon-box {
-  width: 60px;
-  height: 60px;
-  font-size: 1.5rem;
+.skills-icons {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap; /* Allow wrapping to next line */
+  gap: 0.5rem; /* spacing between icons */
+  justify-content: center; /* Center the icons */
 }
 
-.skill-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.skill-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+/* Medium screens and up: align icons to the right and prevent wrapping */
+@media (min-width: 768px) {
+  .skills-icons {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
 }
 
 .skill-icon {
-  width: 35px;
+  flex: 0 0 auto; /* don’t shrink below size */
+  width: 35px; /* max width for desktop */
   height: 35px;
   border-radius: 50%;
   object-fit: cover;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+/* Mobile responsive: scale icons smaller to fit screen */
+@media (max-width: 576px) {
+  .skill-icon {
+    width: 8vw; /* dynamic width relative to screen */
+    height: 8vw;
+    min-width: 20px; /* don't go too small */
+    min-height: 20px;
+  }
 }
 
 /* Skills section Style */
-.skills-section .container {
-  background-color: #0860c4 !important;
-  border-radius: 12px;
-}
-
-.skills-section .flex-wrap {
-  display: inline-block;
-  background-color: #ccc;
-  border-radius: 12px;
-}
-
-.skills-section h3 {
-  font-size: clamp(1.3rem, 2.5vw + 0.7rem, 2rem);
-  font-weight: 600;
-  line-height: 1.35;
-  color: #fff;
-}
-
-.skills-section p,
-ul li {
-  font-size: clamp(1rem, 1vw + 0.8rem, 1.125rem);
-  line-height: 1.6;
-  color: #ffffff;
-}
-
-.feature-tab {
-  flex: 1 1 auto;
-  min-width: 160px;
-  padding: 0.5rem 0.75rem;
-  margin: 0.25rem;
-  border: none;
-  background-color: #f5f5f5;
-  color: #333;
-  border-radius: 8px;
-  font-size: 1rem;
+/* Section Title */
+.skills-section .section-title {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 3rem;
   text-align: center;
-  white-space: nowrap;
-  transition: background-color 0.3s ease;
 }
-.feature-tab.active {
-  background-color: #063a8b;
-  color: #fff;
+
+/* Image */
+.skills-image {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px var(--shadow-dark);
 }
-.feature-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
+
+.skills-image img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
 }
-.feature-content {
-  padding: 20px;
+
+/* Panel */
+.skills-panel {
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 20px 50px var(--shadow-medium);
+}
+
+/* Tabs - Scrollable, single line */
+.skills-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: nowrap; /* No wrap */
+  overflow-x: auto; /* Scrollable on mobile */
+  -webkit-overflow-scrolling: touch; /* Smooth scroll iOS */
+  padding-bottom: 0.25rem;
+}
+
+.skills-tabs::-webkit-scrollbar {
+  height: 6px;
+}
+.skills-tabs::-webkit-scrollbar-track {
+  background: transparent;
+}
+.skills-tabs::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+/* Buttons */
+.skill-tab {
+  flex: 0 0 auto; /* Prevent shrinking */
+  border: none;
+  background: transparent;
+  padding: 0.5rem 0.75rem;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  white-space: nowrap; /* Keep text on single line */
+}
+
+.skill-tab.active {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+/* Content */
+.skills-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.skills-content p {
+  color: #4b5563;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Tags */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag-list span {
+  background: var(--tag-bg);
+  color: var(--tag-color);
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
 }
 
 /* =======================
@@ -157,7 +230,7 @@ ul li {
   border-radius: 3px;
   transition: transform 0.3s ease;
   z-index: 2;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px var(--shadow-darker);
 }
 
 .project-item:hover .desktop-view {
@@ -237,14 +310,14 @@ ul li {
   object-fit: cover;
   z-index: 2;
   border: 2px solid #fff;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 12px var(--shadow-darker);
   transform: rotate(15deg);
   border-radius: 6px;
   margin: 0.5rem;
 }
 
 .portfolio-section #seeMoreModalBtn {
-  background-color: #0860c4 !important;
+  background-color: var(--button-color) !important;
 }
 
 @media (max-width: 992px) {

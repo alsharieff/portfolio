@@ -1,5 +1,5 @@
 // Skills Section Start
-const tabs = document.querySelectorAll(".feature-tab");
+const tabs = document.querySelectorAll(".skill-tab");
 const panes = document.querySelectorAll(".feature-pane");
 const featureImage = document.getElementById("featureImage");
 
@@ -7,17 +7,22 @@ const images = {
   tab1: "img/z-web-dev.avif",
   tab2: "img/z-wordpress-dev.avif",
   tab3: "img/z-technical.png",
-  tab4: "img/z-content.avif",
-  tab5: "img/z-link-building.avif",
 };
+
+// preload
+Object.values(images).forEach((src) => {
+  const img = new Image();
+  img.src = src;
+});
 
 tabs.forEach((tab) => {
   tab.addEventListener("click", () => {
     tabs.forEach((t) => t.classList.remove("active"));
     tab.classList.add("active");
 
-    const target = tab.getAttribute("data-target");
-    panes.forEach((pane) => pane.classList.add("d-none"));
+    const target = tab.dataset.target;
+
+    panes.forEach((p) => p.classList.add("d-none"));
     document.getElementById(target).classList.remove("d-none");
 
     featureImage.src = images[target];
