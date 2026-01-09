@@ -1,3 +1,27 @@
+// hero typing
+const text = "I’m a SEO Specialist & Front-End Developer";
+let index = 0;
+const typingElement = document.querySelector(".typing");
+
+function typeOnce() {
+  if (index < text.length) {
+    const char = text.charAt(index);
+
+    if (char === "&") {
+      typingElement.innerHTML += "&<br>";
+    } else {
+      typingElement.innerHTML += char;
+    }
+
+    index++;
+    setTimeout(typeOnce, 80);
+  } else {
+    typingElement.style.borderRight = "none";
+  }
+}
+
+typeOnce();
+
 // Skills Section Start
 const tabs = document.querySelectorAll(".skill-tab");
 const panes = document.querySelectorAll(".feature-pane");
