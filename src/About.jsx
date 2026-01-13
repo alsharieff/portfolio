@@ -12,7 +12,7 @@ import { VscVscode } from "react-icons/vsc";
 function About() {
   return (
     <>
-      <style
+      {/* <style
         dangerouslySetInnerHTML={{
           __html: `
         .skills-scroll::-webkit-scrollbar {
@@ -24,7 +24,7 @@ function About() {
         }
       `,
         }}
-      />
+      /> */}
       <section id="about" className="bg-[#232426]">
         <div className="container mx-auto px-4 md:max-w-[960px]">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
