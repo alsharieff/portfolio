@@ -5,7 +5,7 @@ function Header() {
 
   return (
     <header className="bg-[#232426] shadow-md relative">
-      <div className="container mx-auto p-4 flex justify-between items-center">
+      <div className="container mx-auto p-4 md:max-w-[960px] flex justify-between items-center">
         <div className="text-2xl font-bold text-white">Portfolio</div>
         <nav className="hidden md:flex space-x-6">
           <a
