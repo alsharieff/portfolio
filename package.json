@@ -1,5 +1,6 @@
 {
   "name": "portfolio",
+  "home": "https://alsharieff.github.io/react-portfolio/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
