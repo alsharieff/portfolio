@@ -3,8 +3,8 @@ import picture from "./assets/picture.jpg";
 
 function Hero() {
   return (
-    <section className="py-16">
-      <div className="container mx-auto px-4 flex flex-row items-center">
+    <section className="py-8 md:py-16">
+      <div className="container mx-auto px-4 md:max-w-[960px] flex flex-row items-center">
         {/* Left: Profile Image */}
         <div className="w-1/3 md:w-1/2 flex justify-center md:justify-start">
           <img
@@ -37,7 +37,7 @@ function Hero() {
             </a>
             <a
               href="#contact"
-              className="bg-white text-black text-[11px] md:text-base px-3 py-2 md:px-6 md:py-3 rounded-lg font-semibold transition duration-300 text-center flex items-center justify-center"
+              className="bg-white text-black text-[10px] md:text-base px-1 py-2 md:px-6 md:py-3 rounded-lg font-semibold transition duration-300 text-center flex items-center justify-center"
             >
               <svg
                 className="w-5 h-5"
