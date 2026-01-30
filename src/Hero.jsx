@@ -2,9 +2,13 @@ import React from "react";
 import picture from "./assets/profile.png";
 import RoleBlink from "./parts/RoleAnimation.jsx";
 
-// Reminder for deploy
-// 1. npm run build
-// 2. npm run deploy
+// Reminder for deployment to push main
+// 1. git add .
+// 2. git commit -m "Add new component"
+// 3. git push origin main
+// to from main to gh-pages
+// 4. npm run build
+// 5. npm run deploy
 
 function Hero() {
   return (
