@@ -1,35 +1,64 @@
-import React from "react";
-import { FaGithub, FaRegEnvelope } from "react-icons/fa"; // Use FaRegEnvelope for message
+import React, { useState } from "react";
+import { FaGithub, FaRegEnvelope } from "react-icons/fa";
 import { BsTelephone } from "react-icons/bs";
+import { FiChevronUp } from "react-icons/fi";
 
 function Bottom() {
+  const [open, setOpen] = useState(false);
+
   return (
-    // Mobile-only, fixed at bottom, right half of the screen
-    <div className="fixed bottom-5 right-0 w-1/2 p-2 flex justify-around items-center md:hidden z-50 rounded-tl-lg shadow-lg">
-      <a
-        href="mailto:youremail@example.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-white text-2xl transition hover:text-gray-300"
+    <div
+      className={`fixed bottom-0 right-0 md:hidden z-50
+        bg-[#36d1a7] rounded-tl-lg shadow-lg
+        transition-all duration-300 ease-out
+        ${open ? "w-1/2 p-2" : "w-12 p-2"}`}
+    >
+      {/* Toggle Arrow */}
+      <button
+        onClick={() => setOpen(!open)}
+        className="flex items-center justify-center w-full text-white text-xl"
+        aria-label="Toggle contact actions"
       >
-        <FaRegEnvelope />
-      </a>
-      <a
-        href="tel:+1234567890"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-white text-2xl transition hover:text-gray-300"
+        <FiChevronUp
+          className={`transition-transform duration-300 ${
+            open ? "rotate-180" : ""
+          }`}
+        />
+      </button>
+
+      {/* Actions */}
+      <div
+        className={`flex justify-around items-center mt-2
+          transition-all duration-300
+          ${
+            open
+              ? "opacity-100 scale-100"
+              : "opacity-0 scale-95 pointer-events-none"
+          }`}
       >
-        <BsTelephone />
-      </a>
-      <a
-        href="https://github.com/yourusername"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-white text-2xl transition hover:text-gray-300"
-      >
-        <FaGithub />
-      </a>
+        <a
+          href=""
+          className="text-white text-2xl hover:text-gray-200 transition"
+        >
+          <FaRegEnvelope />
+        </a>
+
+        <a
+          href=""
+          className="text-white text-2xl hover:text-gray-200 transition"
+        >
+          <BsTelephone />
+        </a>
+
+        <a
+          href=""
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white text-2xl hover:text-gray-200 transition"
+        >
+          <FaGithub />
+        </a>
+      </div>
     </div>
   );
 }

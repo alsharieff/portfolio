@@ -1,5 +1,10 @@
 import React from "react";
-import picture from "./assets/picture.jpg";
+import picture from "./assets/profile.png";
+import RoleBlink from "./parts/RoleAnimation.jsx";
+
+// Reminder for deploy
+// 1. npm run build
+// 2. npm run deploy
 
 function Hero() {
   return (
@@ -20,7 +25,7 @@ function Hero() {
             Alsharieff Kallun
           </h1>
           <h2 className="text-lg md:text-2xl text-[#36d1a7] font-semibold mb-2">
-            Web Developer
+            <RoleBlink />
           </h2>
           <p className="text-white text-sm md:text-lg mb-4 md:mb-8 leading-relaxed">
             Passionate web developer dedicated to creating user-friendly
@@ -36,8 +41,9 @@ function Hero() {
               Portfolio
             </a>
             <a
-              href="#contact"
+              href="https://drive.google.com/file/d/1n2BCzS0AEDkHqAqaMQTBxhunSKjAdQ0U/view?usp=drivesdk"
               className="bg-white text-black text-[10px] md:text-base px-1 py-2 md:px-6 md:py-3 rounded-lg font-semibold transition duration-300 text-center flex items-center justify-center"
+              target="_blank"
             >
               <svg
                 className="w-5 h-5"

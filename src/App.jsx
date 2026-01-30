@@ -1,19 +1,20 @@
-import Header from "./Header.jsx";
-import Hero from "./Hero.jsx";
-import About from "./About.jsx";
-import Bottom from "./Bottom.jsx";
-import Portfolio from "./Portfolio.jsx";
+import { Routes, Route } from "react-router-dom";
+import Layout from "./Layout";
 
-function App() {
+import HomePage from "./pages/home/HomePage.jsx";
+import PortfolioPage from "./pages/portfolio/PortfolioPage.jsx";
+import CertificatePage from "./pages/certificate/CertificatePage.jsx";
+import ContactPage from "./pages/contact/ContactPage.jsx";
+
+export default function App() {
   return (
-    <div className="min-h-screen bg-[#232426] text-white">
-      <Header />
-      <Hero />
-      <About />
-      <Portfolio />
-      <Bottom />
-    </div>
+    <Layout>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/portfolio" element={<PortfolioPage />} />
+        <Route path="/certificate" element={<CertificatePage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
+    </Layout>
   );
 }
-
-export default App;
