@@ -45,7 +45,7 @@ function Hero() {
               Portfolio
             </a>
             <a
-              href="https://drive.google.com/file/d/1n2BCzS0AEDkHqAqaMQTBxhunSKjAdQ0U/view?usp=drivesdk"
+              href="https://drive.google.com/file/d/1PIT4Nb97Jlna3cy5KPBC4mU7ayw7-ug2/view"
               className="bg-white text-black text-[10px] md:text-base px-1 py-2 md:px-6 md:py-3 rounded-lg font-semibold transition duration-300 text-center flex items-center justify-center"
               target="_blank"
             >
