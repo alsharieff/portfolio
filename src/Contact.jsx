@@ -58,14 +58,14 @@ const Contact = () => {
             <span className="font-semibold">Email:</span>{" "}
             <a
               href="mailto:your.email@example.com"
-              className="text-blue-500 hover:underline"
+              className="text-teal-500 hover:underline"
             >
               alsharieffk@gmail.com
             </a>
           </p>
           <p>
             <span className="font-semibold">Phone:</span>{" "}
-            <a href="tel:+1234567890" className="text-blue-500 hover:underline">
+            <a href="tel:+1234567890" className="text-teal-500 hover:underline">
               +63 915 345 0071
             </a>
           </p>

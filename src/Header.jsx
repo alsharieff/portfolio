@@ -5,7 +5,7 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-[#232426] shadow-md relative">
+    <header className="bg-[#0d0d0f] shadow-md relative">
       <div className="container mx-auto p-4 md:max-w-[960px] flex justify-between items-center">
         <div className="text-2xl font-bold text-white">
           <Link to="/">Portfolio</Link>
@@ -24,7 +24,7 @@ function Header() {
             Portfolio
           </Link>
           <Link
-            to="/certificate"
+            to="/about"
             className="font-semibold hover:text-[#36d1a7] transition duration-300"
           >
             About
@@ -73,7 +73,7 @@ function Header() {
             Portfolio
           </Link>
           <Link
-            to="/certificate"
+            to="/about"
             className="block px-4 py-3 hover:bg-[#36d1a7] transition duration-300 font-semibold"
             onClick={() => setIsOpen(false)}
           >

@@ -42,12 +42,12 @@ export default function PortfolioPage() {
   const categories = ["All Project", "iGaming", "Others"];
 
   return (
-    <section className="mx-auto max-w-[960px] px-6 py-12 font-sans">
+    <section className="min-h-screen mx-auto max-w-[960px] px-6 py-12 font-sans bg-[#0d0d0f]">
       {/* Header Area */}
       <div className="flex flex-col items-center mb-12">
-        <h2 className="text-sm font-bold tracking-widest uppercase mb-6">
+        <h1 className="text-sm font-bold tracking-widest uppercase mb-6">
           Work
-        </h2>
+        </h1>
 
         {/* Filter Buttons */}
         <div className="flex gap-3 overflow-x-auto pb-4 w-full justify-center no-scrollbar">
@@ -57,8 +57,8 @@ export default function PortfolioPage() {
               onClick={() => setFilter(cat)}
               className={`px-4 md:px-6 py-2 rounded-full border text-sm font-medium transition-all whitespace-nowrap ${
                 filter === cat
-                  ? "bg-slate-500 text-white border-slate-500 shadow-md"
-                  : "bg-white text-gray-500 border-gray-300 hover:border-gray-500"
+                  ? "bg-teal-500 text-white border-teal-500 shadow-md"
+                  : "bg-white text-gray-500 border-teal-300 hover:border-teal-500"
               }`}
             >
               {cat.toUpperCase()}
@@ -85,9 +85,6 @@ export default function PortfolioPage() {
         <p className="text-sm font-bold text-white text-center md:text-left">
           LIKE WHAT YOU SEE? LET'S WORK TOGETHER.
         </p>
-        <button className="px-8 py-3 bg-slate-500 text-white rounded-full font-bold text-sm hover:bg-slate-600 transition-all shadow-lg">
-          CONTACT ME
-        </button>
       </div>
     </section>
   );

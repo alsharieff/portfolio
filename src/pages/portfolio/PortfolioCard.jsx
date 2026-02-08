@@ -30,7 +30,7 @@ const PortfolioCard = ({ image, title, tags, link }) => {
 
         <a
           href={link}
-          className="px-3 py-1 bg-slate-500 text-white text-sm font-semibold rounded-full hover:bg-slate-600 transition-colors flex items-center gap-1"
+          className="px-3 py-1 bg-teal-500 text-white text-sm font-semibold rounded-full hover:bg-teal-600 transition-colors flex items-center gap-1"
         >
           VIEW
           <span className="text-xs">→</span>

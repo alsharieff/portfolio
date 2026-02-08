@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import CertificateCard from "./CertificateCard";
 import href from "./assets/certificate/href.jpg";
 import zuitt from "./assets/certificate/zuitt.png";
@@ -7,6 +8,20 @@ import switching from "./assets/certificate/cisco-switching.png";
 import ccnav7 from "./assets/certificate/cisco-ccnav7.png";
 
 function Certificate() {
+  const scrollRef = useRef(null);
+
+  const scroll = (direction) => {
+    if (!scrollRef.current) return;
+
+    const { clientWidth } = scrollRef.current;
+    const scrollAmount = direction === "left" ? -clientWidth : clientWidth;
+
+    scrollRef.current.scrollBy({
+      left: scrollAmount,
+      behavior: "smooth",
+    });
+  };
+
   const certificates = [
     {
       image: href,
@@ -48,13 +63,15 @@ function Certificate() {
 
   return (
     <section className="py-8">
-      <div className="mx-auto max-w-[960px]">
+      <div className="mx-auto max-w-[960px] relative">
+        {/* Header */}
         <div className="flex items-center gap-2 mb-4 px-4">
           <h3 className="text-xl md:text-2xl font-bold text-white">
             Certificates
           </h3>
 
-          <span className="flex items-center animate-scrollArrow">
+          {/* Mobile scroll indicator */}
+          <span className="flex md:hidden items-center animate-scrollArrow">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-5 h-5 text-white/60"
@@ -71,23 +88,68 @@ function Certificate() {
             </svg>
           </span>
         </div>
+
         <p className="text-sm text-gray-300 mb-4 px-4">
           Recent certifications and achievements
         </p>
 
-        <div className="flex gap-3 overflow-x-auto no-scrollbar px-4 pb-4">
-          {certificates.map(function (certificate, index) {
-            return (
-              <CertificateCard
-                key={index}
-                image={certificate.image}
-                title={certificate.title}
-                description={certificate.description}
-                link={certificate.link}
-              />
-            );
-          })}
+        {/* Prev Button */}
+        <button
+          onClick={() => scroll("left")}
+          className="hidden md:flex absolute left-0 top-[60%] -translate-y-1/2 z-10 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-full p-2 hover:bg-white/20 transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-5 h-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+        </button>
+
+        {/* Scroll Container */}
+        <div
+          ref={scrollRef}
+          className="flex gap-3 overflow-x-auto no-scrollbar px-4 pb-4 scroll-smooth"
+        >
+          {certificates.map((certificate, index) => (
+            <CertificateCard
+              key={index}
+              image={certificate.image}
+              title={certificate.title}
+              description={certificate.description}
+              link={certificate.link}
+            />
+          ))}
         </div>
+
+        {/* Next Button */}
+        <button
+          onClick={() => scroll("right")}
+          className="hidden md:flex absolute right-0 top-[60%] -translate-y-1/2 z-10 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-full p-2 hover:bg-white/20 transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-5 h-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </button>
       </div>
     </section>
   );
