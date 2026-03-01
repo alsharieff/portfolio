@@ -4,10 +4,12 @@ import { FaCss3Alt } from "react-icons/fa";
 import { FaJs } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
-import { FaReact } from "react-icons/fa";
 import { FaWordpress } from "react-icons/fa";
 import { FaGitSquare } from "react-icons/fa";
-import { VscVscode } from "react-icons/vsc";
+import { FaGithub } from "react-icons/fa";
+import { TbChartInfographic } from "react-icons/tb";
+import { FaAt } from "react-icons/fa";
+import chatgpt from "./assets/icon/chatgpt.png";
 
 function About() {
   return (
@@ -25,80 +27,78 @@ function About() {
       `,
         }}
       />
-      <section id="about" className="bg-[#232426]">
-        <div className="container mx-auto px-4 md:max-w-[960px]">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            About
-          </h2>
-          <div className="max-w-[960px] mx-auto">
-            <p className="text-white text-sm md:text-xl leading-relaxed mb-3">
-              BSIT graduate (2025) with 2 years of experience in SEO and web
-              development, 4 years in property sales, and expertise in
-              AI-assisted web solutions. Skilled in responsive web design, SEO
-              strategy, and client-focused solutions, delivering projects
-              efficiently with AI tools to drive measurable results.
-            </p>
-          </div>
-          <div className="mt-8">
-            <div className="flex items-center gap-2 mb-4">
-              <h3 className="text-xl font-bold text-white">Skills</h3>
+      <section id="about" className="bg-[#0B0F19] text-[#E5E7EB] py-16">
+        <div className="mx-auto px-4 md:max-w-[960px] flex flex-col gap-8">
+          {/* Heading */}
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">About</h2>
 
-              {/* Mobile-only moving arrow */}
-              <span className="md:hidden flex items-center animate-scrollArrow">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5 text-white/60"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
+          {/* Description */}
+          <p className="text-[#9CA3AF] font-medium text-sm md:text-lg leading-relaxed mb-6">
+            Technical SEO specialist with 2+ years of experience optimizing
+            website architecture, improving crawl efficiency, and implementing
+            data-driven search strategies. Skilled in site audits, Core Web
+            Vitals optimization, structured data implementation, and AI-assisted
+            workflows, with hands-on experience using Screaming Frog, Google
+            Search Console, and Ahrefs to deliver measurable organic growth and
+            scalable digital performance.
+          </p>
+
+          {/* Skills Scrolling */}
+          <div className="overflow-hidden relative">
+            <div className="flex gap-8 animate-scrollSkills whitespace-nowrap">
+              {[
+                { icon: <FaHtml5 size={24} />, label: "HTML" },
+                { icon: <FaCss3Alt size={24} />, label: "CSS" },
+                { icon: <FaJs size={24} />, label: "JavaScript" },
+                { icon: <SiTailwindcss size={24} />, label: "Tailwind" },
+                { icon: <FaBootstrap size={24} />, label: "Bootstrap" },
+                { icon: <FaWordpress size={24} />, label: "WordPress" },
+                { icon: <FaGitSquare size={24} />, label: "GIT" },
+                { icon: <FaGithub size={24} />, label: "GitHub" },
+                { icon: <TbChartInfographic size={24} />, label: "GSC" },
+                { icon: <FaAt size={24} />, label: "Ahrefs" },
+                {
+                  icon: <img src={chatgpt} alt="ChatGPT" className="w-6 h-6" />,
+                  label: "ChatGPT",
+                },
+              ].map((skill) => (
+                <div
+                  key={skill.label}
+                  className="flex flex-col items-center min-w-[100px] text-center"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </span>
-            </div>
-
-            <div className="flex space-x-2 overflow-x-auto skills-scroll">
-              <div className="flex flex-col items-start min-w-[80px]">
-                <FaHtml5 size={24} />
-                <span className="text-white text-sm mt-2">HTML</span>
-              </div>
-              <div className="flex flex-col items-start min-w-[80px]">
-                <FaCss3Alt size={24} />
-                <span className="text-white text-sm mt-2">CSS</span>
-              </div>
-              <div className="flex flex-col items-start min-w-[80px]">
-                <FaJs size={24} />
-                <span className="text-white text-sm mt-2">JavaScript</span>
-              </div>
-              <div className="flex flex-col items-start min-w-[80px]">
-                <SiTailwindcss size={24} />
-                <span className="text-white text-sm mt-2">Tailwind</span>
-              </div>
-              <div className="flex flex-col items-start min-w-[80px]">
-                <FaBootstrap size={24} />
-                <span className="text-white text-sm mt-2">Bootstrap</span>
-              </div>
-              <div className="flex flex-col items-start min-w-[80px]">
-                <FaReact size={24} />
-                <span className="text-white text-sm mt-2">React</span>
-              </div>
-              <div className="flex flex-col items-start min-w-[80px]">
-                <FaWordpress size={24} />
-                <span className="text-white text-sm mt-2">WordPress</span>
-              </div>
-              <div className="flex flex-col items-start min-w-[80px]">
-                <FaGitSquare size={24} />
-                <span className="text-white text-sm mt-2">GIT</span>
-              </div>
-              <div className="flex flex-col items-start min-w-[80px]">
-                <VscVscode size={24} />
-                <span className="text-white text-sm mt-2">VsCode</span>
-              </div>
+                  <div className="text-[#8B5CF6]">{skill.icon}</div>
+                  <span className="text-[#E5E7EB] text-sm mt-2">
+                    {skill.label}
+                  </span>
+                </div>
+              ))}
+              {/* Repeat for seamless scroll */}
+              {[
+                { icon: <FaHtml5 size={24} />, label: "HTML" },
+                { icon: <FaCss3Alt size={24} />, label: "CSS" },
+                { icon: <FaJs size={24} />, label: "JavaScript" },
+                { icon: <SiTailwindcss size={24} />, label: "Tailwind" },
+                { icon: <FaBootstrap size={24} />, label: "Bootstrap" },
+                { icon: <FaWordpress size={24} />, label: "WordPress" },
+                { icon: <FaGitSquare size={24} />, label: "GIT" },
+                { icon: <FaGithub size={24} />, label: "GitHub" },
+                { icon: <TbChartInfographic size={24} />, label: "GSC" },
+                { icon: <FaAt size={24} />, label: "Ahrefs" },
+                {
+                  icon: <img src={chatgpt} alt="ChatGPT" className="w-6 h-6" />,
+                  label: "ChatGPT",
+                },
+              ].map((skill, idx) => (
+                <div
+                  key={`repeat-${idx}`}
+                  className="flex flex-col items-center min-w-[100px] text-center"
+                >
+                  <div className="text-[#8B5CF6]">{skill.icon}</div>
+                  <span className="text-[#E5E7EB] text-sm mt-2">
+                    {skill.label}
+                  </span>
+                </div>
+              ))}
             </div>
           </div>
         </div>

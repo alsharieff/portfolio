@@ -54,19 +54,17 @@ function Portfolio() {
   ];
 
   return (
-    <section className="py-16">
+    <section className="py-16 bg-[#0B0F19] text-[#E5E7EB]">
       <div className="mx-auto max-w-[960px] relative">
         {/* Header */}
-        <div className="flex items-center gap-2 mb-4 px-4">
-          <h3 className="text-xl md:text-2xl font-bold text-white">
-            Featured Projects
-          </h3>
+        <div className="flex items-center gap-2 mb-6 px-4">
+          <h3 className="text-xl md:text-2xl font-bold">Featured Projects</h3>
 
           {/* Mobile-only scroll indicator */}
           <span className="flex md:hidden items-center animate-scrollArrow">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-5 h-5 text-white/60"
+              className="w-5 h-5 text-[#8B5CF6]"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -84,7 +82,7 @@ function Portfolio() {
         {/* Prev Button */}
         <button
           onClick={() => scroll("left")}
-          className="hidden md:flex absolute left-0 top-[55%] -translate-y-1/2 z-10 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-full p-2 hover:bg-white/20 transition"
+          className="hidden md:flex absolute left-0 top-[50%] -translate-y-1/2 z-10 bg-[#1A1D23] border border-[#8B5CF6]/50 text-[#8B5CF6] rounded-full p-2 shadow-md"
         >
           <ChevronLeft size={20} />
         </button>
@@ -92,7 +90,7 @@ function Portfolio() {
         {/* Scroll Container */}
         <div
           ref={scrollRef}
-          className="flex gap-3 overflow-x-auto no-scrollbar px-4 pb-4 scroll-smooth"
+          className="flex gap-4 overflow-x-auto no-scrollbar px-4 pb-4 scroll-smooth"
         >
           {projects.map((project, index) => (
             <ProjectCard key={`h-${index}`} {...project} />
@@ -102,7 +100,7 @@ function Portfolio() {
         {/* Next Button */}
         <button
           onClick={() => scroll("right")}
-          className="hidden md:flex absolute right-0 top-[55%] -translate-y-1/2 z-10 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-full p-2 hover:bg-white/20 transition"
+          className="hidden md:flex absolute right-0 top-[50%] -translate-y-1/2 z-10 bg-[#1A1D23] border border-[#8B5CF6]/50 text-[#8B5CF6] rounded-full p-2 shadow-md"
         >
           <ChevronRight size={20} />
         </button>

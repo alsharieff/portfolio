@@ -12,45 +12,51 @@ import RoleBlink from "./parts/RoleAnimation.jsx";
 
 function Hero() {
   return (
-    <section className="py-8 md:py-16">
-      <div className="container mx-auto px-4 md:max-w-[960px] flex flex-row items-center">
-        {/* Left: Profile Image */}
-        <div className="w-1/3 md:w-1/2 flex justify-center md:justify-start">
-          <img
-            src={picture}
-            alt="Alsharieff Kallun"
-            className="w-48 h-48 md:w-80 md:h-80 rounded-full object-cover shadow-lg"
-          />
+    <section className="py-8 md:py-12 bg-[#0B0F19] text-[#E5E7EB]">
+      <div className="mx-auto px-4 max-w-[960px] flex flex-row items-center gap-4 md:gap-8">
+        {/* Left: Profile Image (30%) */}
+        <div className="w-[30%] flex justify-center">
+          <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-60 md:h-60 rounded-3xl overflow-hidden">
+            <img
+              src={picture}
+              alt="Alsharieff Kallun"
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
 
-        {/* Right: Content */}
-        <div className="w-2/3 md:w-1/2 text-left pl-4 md:pl-8">
-          <h1 className="text-2xl md:text-5xl font-bold text-white">
+        {/* Right: Content (70%) */}
+        <div className="w-[70%] text-left space-y-2 sm:space-y-4 md:space-y-6">
+          <h1 className="text-lg sm:text-2xl md:text-5xl font-extrabold tracking-tight">
             Alsharieff Kallun
           </h1>
-          <h2 className="text-lg md:text-2xl text-[#36d1a7] font-semibold mb-2">
+
+          <h2 className="text-xs sm:text-lg md:text-2xl text-[#8B5CF6] font-semibold">
             <RoleBlink />
           </h2>
-          <p className="text-white text-sm md:text-lg mb-4 md:mb-8 leading-relaxed">
-            Passionate web developer dedicated to creating user-friendly
-            websites!
+
+          <p className="text-xs sm:text-sm md:text-lg text-[#9CA3AF] font-medium leading-relaxed">
+            Web developer & Technical SEO specialist creating user-friendly,
+            high-performing websites optimized for search and growth.
           </p>
 
           {/* Buttons */}
-          <div className="flex md:flex-row gap-4">
+          <div className="flex flex-row gap-2 sm:gap-4 mt-2 sm:mt-4 md:mt-6 justify-start">
             <a
               href="#portfolio"
-              className="bg-[#36d1a7] text-white px-2 py-2 md:px-6 md:py-3 rounded-lg font-semibold hover:bg-[#36d1a9] transition duration-300 text-center"
+              className="bg-[#8B5CF6] hover:bg-[#7C3AED] text-white px-3 sm:px-4 md:px-6 py-2 sm:py-3 md:py-3 rounded-full font-semibold text-center transition-shadow shadow-md text-xs sm:text-sm md:text-base"
             >
               Portfolio
             </a>
+
             <a
-              href="https://drive.google.com/file/d/1PIT4Nb97Jlna3cy5KPBC4mU7ayw7-ug2/view"
-              className="bg-white text-black text-[10px] md:text-base px-1 py-2 md:px-6 md:py-3 rounded-lg font-semibold transition duration-300 text-center flex items-center justify-center"
+              href="https://drive.google.com/file/d/1NpJx6RV1INEP4owb3PYNti5Sgc7ZkY7E/view?usp=drivesdk/"
               target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#1F2937] hover:bg-[#2A2F3A] text-white px-3 sm:px-4 md:px-6 py-2 sm:py-3 md:py-3 rounded-full font-semibold flex items-center justify-center gap-1 sm:gap-2 md:gap-2 transition-shadow shadow-md text-xs sm:text-sm md:text-base"
             >
               <svg
-                className="w-5 h-5"
+                className="w-3 sm:w-4 md:w-5 h-3 sm:h-4 md:h-5"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"

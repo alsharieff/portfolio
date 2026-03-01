@@ -1,6 +1,6 @@
 // AboutPage.jsx
 import React from "react";
-import About from "../../assets/about.jpg";
+import About from "../../assets/about.png";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -14,14 +14,22 @@ import { SiTailwindcss } from "react-icons/si";
 
 export default function AboutPage() {
   return (
-    <section className="min-h-screen flex items-center justify-center mx-auto max-w-[960px] px-6 py-12 font-sans bg-[#0d0d0f]">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <section className="min-h-screen flex items-center bg-[#0B0F19] px-6 py-16 font-sans text-[#E5E7EB]">
+      <div className="mx-auto max-w-[960px] w-full grid md:grid-cols-2 gap-12 items-center">
         {/* LEFT SIDE - Intro Text */}
         <div className="space-y-6 text-center md:text-left">
-          <h1 className="text-5xl font-extrabold text-white">About Me</h1>
+          {/* Heading */}
+          <h1 className="text-5xl font-extrabold text-white tracking-tight">
+            About Me
+          </h1>
+
+          {/* Intro Paragraph */}
           <p className="text-gray-300 text-lg sm:text-xl leading-relaxed">
-            I’m <span className="font-semibold">Al-Sharieff K. Kallun</span>, a
-            BSIT graduate (2025) with 2 years of experience in SEO and web
+            I’m{" "}
+            <span className="font-semibold text-[#8B5CF6]">
+              Al-Sharieff K. Kallun
+            </span>
+            , a BSIT graduate (2025) with 2 years of experience in SEO and web
             development, 4 years in property sales, and expertise in AI-assisted
             web solutions. I specialize in responsive web design, SEO strategy,
             and client-focused solutions, delivering projects efficiently with
@@ -30,11 +38,10 @@ export default function AboutPage() {
 
           {/* Skills Section */}
           <div className="mt-6">
-            <h2 className="text-2xl font-semibold text-[#36d1a7] mb-4">
+            <h2 className="text-2xl font-semibold text-[#8B5CF6] mb-4">
               Skills
             </h2>
 
-            {/* Flex wrap with responsive alignment */}
             <div className="flex flex-wrap gap-6 justify-center md:justify-start">
               {[
                 { icon: <FaHtml5 size={28} />, label: "HTML" },
@@ -50,7 +57,7 @@ export default function AboutPage() {
                   key={skill.label}
                   className="flex flex-col items-center min-w-[80px] text-center"
                 >
-                  <div className="text-[#36d1a7]">{skill.icon}</div>
+                  <div className="text-[#8B5CF6]">{skill.icon}</div>
                   <span className="text-white text-sm mt-2">{skill.label}</span>
                 </div>
               ))}
@@ -58,14 +65,17 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* RIGHT SIDE - Profile Image */}
-        <div className="flex justify-center md:justify-end">
-          <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-3xl overflow-hidden shadow-2xl border border-[#36d1a7]/30">
+        {/* RIGHT SIDE - Full Width Technical SEO Illustration */}
+        <div className="flex justify-center md:justify-end w-full relative">
+          <div className="w-full max-w-md sm:max-w-lg lg:max-w-xl h-64 sm:h-80 md:h-96 rounded-3xl overflow-hidden relative">
             <img
               src={About}
-              alt="Al-Sharieff K. Kallun"
-              className="w-full h-full object-cover"
+              alt="Technical SEO concept illustration"
+              className="w-full h-full object-contain md:object-cover"
             />
+
+            {/* Optional overlay for subtle effect only on desktop */}
+            <div className="hidden md:block absolute inset-0 bg-gradient-to-t from-[#0B0F19]/30 to-transparent rounded-3xl pointer-events-none"></div>
           </div>
         </div>
       </div>

@@ -42,49 +42,58 @@ export default function PortfolioPage() {
   const categories = ["All Project", "iGaming", "Others"];
 
   return (
-    <section className="min-h-screen mx-auto max-w-[960px] px-6 py-12 font-sans bg-[#0d0d0f]">
-      {/* Header Area */}
-      <div className="flex flex-col items-center mb-12">
-        <h1 className="text-sm font-bold tracking-widest uppercase mb-6">
-          Work
-        </h1>
+    <section className="bg-[#0B0F19] text-[#E5E7EB]">
+      <div className="max-w-[960px] mx-auto px-6 md:px-8 py-24">
+        {/* Header */}
+        <div className="mb-16">
+          <p className="text-xs tracking-[0.25em] uppercase text-[#9CA3AF] mb-3">
+            Selected Work
+          </p>
+          <h2 className="text-3xl md:text-4xl font-heading font-semibold leading-tight max-w-[600px]">
+            Technical SEO & Web Performance Projects
+          </h2>
+        </div>
 
-        {/* Filter Buttons */}
-        <div className="flex gap-3 overflow-x-auto pb-4 w-full justify-center no-scrollbar">
+        {/* Filters */}
+        <div className="flex flex-wrap gap-3 mb-16">
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setFilter(cat)}
-              className={`px-4 md:px-6 py-2 rounded-full border text-sm font-medium transition-all whitespace-nowrap ${
+              className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
                 filter === cat
-                  ? "bg-teal-500 text-white border-teal-500 shadow-md"
-                  : "bg-white text-gray-500 border-teal-300 hover:border-teal-500"
+                  ? "bg-[#8B5CF6] text-white"
+                  : "bg-[#111827] text-[#9CA3AF] border border-[#2A2F3A] hover:border-[#8B5CF6] hover:text-white"
               }`}
             >
-              {cat.toUpperCase()}
+              {cat}
             </button>
           ))}
         </div>
-      </div>
 
-      {/* Projects Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {filteredProjects.map((project) => (
-          <PortfolioCard
-            key={project.id}
-            title={project.title}
-            tags={project.tags}
-            image={project.image}
-            link={project.link}
-          />
-        ))}
-      </div>
+        {/* Projects */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {filteredProjects.map((project) => (
+            <div className="bg-[#1F2937] border border-[#2A2F3A] rounded-xl p-6 hover:border-[#8B5CF6] transition duration-300">
+              <PortfolioCard {...project} />
+            </div>
+          ))}
+        </div>
 
-      {/* Footer CTA */}
-      <div className="mt-20 pt-10 border-t flex flex-col md:flex-row justify-between items-center gap-6">
-        <p className="text-sm font-bold text-white text-center md:text-left">
-          LIKE WHAT YOU SEE? LET'S WORK TOGETHER.
-        </p>
+        {/* CTA */}
+        <div className="mt-28">
+          <div className="bg-[#111827] border border-[#2A2F3A] rounded-2xl p-10 text-center">
+            <h3 className="text-xl font-medium mb-4">
+              Let’s build scalable search growth.
+            </h3>
+            <a
+              href="#contact"
+              className="inline-block px-6 py-3 rounded-lg bg-[#8B5CF6] text-white text-sm font-medium hover:bg-[#7C3AED] transition"
+            >
+              Start a Conversation
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -13,25 +13,25 @@ function Header() {
         <nav className="hidden md:flex space-x-6">
           <Link
             to="/"
-            className="font-semibold hover:text-[#36d1a7] transition duration-300"
+            className="font-semibold hover:text-[#7C3AED] transition duration-300"
           >
             Home
           </Link>
           <Link
             to="/portfolio"
-            className="font-semibold hover:text-[#36d1a7] transition duration-300"
+            className="font-semibold hover:text-[#7C3AED] transition duration-300"
           >
             Portfolio
           </Link>
           <Link
             to="/about"
-            className="font-semibold hover:text-[#36d1a7] transition duration-300"
+            className="font-semibold hover:text-[#7C3AED] transition duration-300"
           >
             About
           </Link>
           <Link
             to="/contact"
-            className="font-semibold hover:text-[#36d1a7] transition duration-300"
+            className="font-semibold hover:text-[#7C3AED] transition duration-300"
           >
             Contact
           </Link>

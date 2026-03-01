@@ -22,7 +22,7 @@ export default function RoleBlink() {
 
   return (
     <h2
-      className={`role-text text-lg md:text-2xl text-[#36d1a7] font-semibold mb-2 ${
+      className={`role-text text-lg md:text-2xl text-[#7C3AED] font-semibold mb-2 ${
         fade ? "fade-in" : "fade-out"
       }`}
     >
