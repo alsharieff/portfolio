@@ -60,28 +60,28 @@ function Header() {
         <div className="md:hidden bg-[#232426] shadow-md border-t absolute top-full left-0 right-0 z-50">
           <Link
             to="/"
-            className="block px-4 py-3 hover:bg-[#36d1a7] transition duration-300 font-semibold"
+            className="block px-4 py-3 hover:bg-[#7C3AED] transition duration-300 font-semibold"
             onClick={() => setIsOpen(false)}
           >
             Home
           </Link>
           <Link
             to="/portfolio"
-            className="block px-4 py-3 hover:bg-[#36d1a7] transition duration-300 font-semibold"
+            className="block px-4 py-3 hover:bg-[#7C3AED] transition duration-300 font-semibold"
             onClick={() => setIsOpen(false)}
           >
             Portfolio
           </Link>
           <Link
             to="/about"
-            className="block px-4 py-3 hover:bg-[#36d1a7] transition duration-300 font-semibold"
+            className="block px-4 py-3 hover:bg-[#7C3AED] transition duration-300 font-semibold"
             onClick={() => setIsOpen(false)}
           >
             About
           </Link>
           <Link
             to="/contact"
-            className="block px-4 py-3 hover:bg-[#36d1a7] transition duration-300 font-semibold"
+            className="block px-4 py-3 hover:bg-[#7C3AED] transition duration-300 font-semibold"
             onClick={() => setIsOpen(false)}
           >
             Contact
