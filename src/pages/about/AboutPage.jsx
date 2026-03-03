@@ -29,11 +29,21 @@ export default function AboutPage() {
             <span className="font-semibold text-[#8B5CF6]">
               Al-Sharieff K. Kallun
             </span>
-            , a BSIT graduate (2025) with 2 years of experience in SEO and web
-            development, 4 years in property sales, and expertise in AI-assisted
-            web solutions. I specialize in responsive web design, SEO strategy,
-            and client-focused solutions, delivering projects efficiently with
-            AI tools to drive measurable results.
+            , a Technical SEO specialist with 2+ years of experience optimizing
+            website architecture, improving crawl efficiency, and implementing
+            data-driven search strategies. Skilled in site audits, Core Web
+            Vitals optimization, structured data implementation, and AI-assisted
+            workflows, with hands-on experience using Screaming Frog, Google
+            Search Console, and Ahrefs to deliver measurable organic growth and
+            scalable digital performance.
+          </p>
+
+          <p className="text-gray-300 text-lg sm:text-xl leading-relaxed mt-4">
+            I thrive in fast-paced environments and am a quick learner, able to
+            adapt easily to different aspects of a role, even the most
+            challenging tasks. I enjoy exploring new tools and technologies,
+            continuously expanding my skill set, and finding efficient solutions
+            that drive results.
           </p>
 
           {/* Skills Section */}

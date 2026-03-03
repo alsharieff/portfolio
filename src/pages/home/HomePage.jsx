@@ -1,4 +1,8 @@
 import Hero from "../../Hero";
+import Stat from "../../Stat";
+import Services from "../../Services";
+import SeoTimeline from "../../SeoTimeline";
+import TechStack from "../../TechStack";
 import About from "../../About";
 import Portfolio from "../../Portfolio";
 import Certificate from "../../Certificate";
@@ -8,6 +12,10 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <Stat />
+      <Services />
+      <SeoTimeline />
+      <TechStack />
       <About />
       <Portfolio />
       <Certificate />

@@ -1,16 +1,26 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "./assets/name-logo.png/";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-[#0d0d0f] shadow-md relative">
-      <div className="container mx-auto p-4 md:max-w-[960px] flex justify-between items-center">
-        <div className="text-2xl font-bold text-white">
-          <Link to="/">Portfolio</Link>
-        </div>
-        <nav className="hidden md:flex space-x-6">
+    <header className="bg-[#0B0F19] shadow-md relative">
+      <div className="container mx-auto md:max-w-[960px] flex items-center justify-between py-3 px-4">
+        {/* Logo */}
+        <Link to="/" className="flex items-center">
+          <div className="w-[120px] sm:w-[140px] md:w-[150px] h-[40px] sm:h-[60px] md:h-[80px] flex items-center justify-center">
+            <img
+              src={logo}
+              alt="Al-Sharieff Logo"
+              className="max-w-full max-h-28 object-contain"
+            />
+          </div>
+        </Link>
+
+        {/* Desktop Menu */}
+        <nav className="hidden md:flex space-x-6 items-center">
           <Link
             to="/"
             className="font-semibold hover:text-[#7C3AED] transition duration-300"
@@ -36,6 +46,8 @@ function Header() {
             Contact
           </Link>
         </nav>
+
+        {/* Mobile Menu Button */}
         <button
           className="md:hidden focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
@@ -56,6 +68,8 @@ function Header() {
           </svg>
         </button>
       </div>
+
+      {/* Mobile Dropdown Menu */}
       {isOpen && (
         <div className="md:hidden bg-[#232426] shadow-md border-t absolute top-full left-0 right-0 z-50">
           <Link

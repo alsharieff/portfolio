@@ -35,7 +35,7 @@ function Hero() {
             <RoleBlink />
           </h2>
 
-          <p className="text-xs sm:text-sm md:text-lg text-[#9CA3AF] font-medium leading-relaxed">
+          <p className="text-xs sm:text-sm md:text-lg text-[#9CA3AF] font-bold leading-relaxed">
             Web developer & Technical SEO specialist creating user-friendly,
             high-performing websites optimized for search and growth.
           </p>
