@@ -1,5 +1,4 @@
-// TechStack.jsx
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import gsc from "./assets/tools/gsc1.png";
 import screamingfrog from "./assets/tools/screamingfrog2.png";
 import ahrefs from "./assets/tools/ahrefs.webp";
@@ -15,27 +14,55 @@ const tools = [
 ];
 
 const TechStack = () => {
+  const scrollRef = useRef(null);
+
+  useEffect(() => {
+    const container = scrollRef.current;
+    let animationFrame;
+    let speed = 0.5; // control speed here (increase = faster)
+
+    const autoScroll = () => {
+      if (!container) return;
+
+      container.scrollLeft += speed;
+
+      // seamless loop
+      if (container.scrollLeft >= container.scrollWidth / 2) {
+        container.scrollLeft = 0;
+      }
+
+      animationFrame = requestAnimationFrame(autoScroll);
+    };
+
+    animationFrame = requestAnimationFrame(autoScroll);
+
+    return () => cancelAnimationFrame(animationFrame);
+  }, []);
+
   return (
-    <section className="bg-[#0B0F19] py-16 overflow-hidden">
+    <section className="bg-[#0B0F19] py-16">
       <div className="max-w-[1100px] mx-auto px-4">
         <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-12">
           Tools & Tech Stack
         </h2>
 
-        {/* Marquee Container */}
-        <div className="relative overflow-hidden">
-          <div className="flex w-max animate-marquee gap-6 md:gap-8">
+        {/* Outer scroll container (allows manual drag if desired) */}
+        <div className="relative overflow-x-auto whitespace-nowrap scrollbar-hide cursor-grab active:cursor-grabbing">
+          {/* Inner marquee container for continuous animation */}
+          <div className="animate-marquee flex gap-8 w-max">
+            {/* Duplicate tools to make infinite loop seamless */}
             {[...tools, ...tools].map((tool, index) => (
               <div
                 key={index}
-                className="md:min-w-[160px] py-2 md:p-6 flex flex-col items-center"
+                className="min-w-[160px] py-4 px-6 flex flex-col items-center"
               >
                 <img
                   src={tool.logo}
                   alt={tool.name}
                   className="h-10 sm:h-12 w-auto object-contain"
+                  draggable="false"
                 />
-                <span className="mt-4 text-sm text-gray-400 text-center whitespace-nowrap">
+                <span className="mt-3 text-sm text-gray-400 whitespace-nowrap">
                   {tool.name}
                 </span>
               </div>

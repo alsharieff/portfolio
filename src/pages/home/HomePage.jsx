@@ -3,8 +3,7 @@ import Stat from "../../Stat";
 import Services from "../../Services";
 import SeoTimeline from "../../SeoTimeline";
 import TechStack from "../../TechStack";
-import About from "../../About";
-import Portfolio from "../../Portfolio";
+import SeoGrowth from "../../SeoGrowth";
 import Certificate from "../../Certificate";
 import Contact from "../../Contact";
 
@@ -16,8 +15,7 @@ export default function HomePage() {
       <Services />
       <SeoTimeline />
       <TechStack />
-      <About />
-      <Portfolio />
+      <SeoGrowth />
       <Certificate />
       <Contact />
     </>

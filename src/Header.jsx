@@ -6,7 +6,7 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-[#0B0F19] shadow-md relative">
+    <header className="bg-[#0B0F19] shadow-md sticky top-0 z-50">
       <div className="container mx-auto md:max-w-[960px] flex items-center justify-between py-3 px-4">
         {/* Logo */}
         <Link to="/" className="flex items-center">
@@ -21,28 +21,16 @@ function Header() {
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex space-x-6 items-center">
-          <Link
-            to="/"
-            className="font-semibold hover:text-[#7C3AED] transition duration-300"
-          >
+          <Link to="/" className="font-semibold">
             Home
           </Link>
-          <Link
-            to="/portfolio"
-            className="font-semibold hover:text-[#7C3AED] transition duration-300"
-          >
+          <Link to="/portfolio" className="font-semibold">
             Portfolio
           </Link>
-          <Link
-            to="/about"
-            className="font-semibold hover:text-[#7C3AED] transition duration-300"
-          >
+          <Link to="/about" className="font-semibold">
             About
           </Link>
-          <Link
-            to="/contact"
-            className="font-semibold hover:text-[#7C3AED] transition duration-300"
-          >
+          <Link to="/contact" className="font-semibold">
             Contact
           </Link>
         </nav>
