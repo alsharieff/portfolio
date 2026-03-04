@@ -1,16 +1,28 @@
 import React, { useEffect, useRef } from "react";
-import gsc from "./assets/tools/gsc1.png";
-import screamingfrog from "./assets/tools/screamingfrog2.png";
-import ahrefs from "./assets/tools/ahrefs.webp";
-import pagespeed from "./assets/tools/pagespeed2.svg";
-import keywordtool from "./assets/tools/keywordtool.jpg";
+import gsc from "./assets/tools/gsc.png";
+import ahrefs from "./assets/tools/ahref.png";
+import semrush from "./assets/tools/semrush.png";
+import screamingfrog from "./assets/tools/screamingfrog.png";
+import pagespeed from "./assets/tools/pagespeed.svg";
+import wordpress from "./assets/tools/wordpress.png";
+import html from "./assets/tools/html5.png";
+import css from "./assets/tools/css.png";
+import javascript from "./assets/tools/javascript.png";
+import tailwind from "./assets/tools/tailwind.png";
+import bootstrap from "./assets/tools/bootstrap.png";
 
 const tools = [
   { name: "Google Search Console", logo: gsc },
-  { name: "Screaming Frog", logo: screamingfrog },
   { name: "Ahrefs", logo: ahrefs },
+  { name: "Semrush", logo: semrush },
+  { name: "Screaming Frog", logo: screamingfrog },
   { name: "PageSpeed Insights", logo: pagespeed },
-  { name: "KeywordTool", logo: keywordtool },
+  { name: "WordPress", logo: wordpress },
+  { name: "HTML", logo: html },
+  { name: "CSS", logo: css },
+  { name: "JavaScript", logo: javascript },
+  { name: "Tailwind CSS", logo: tailwind },
+  { name: "Bootstrap", logo: bootstrap },
 ];
 
 const TechStack = () => {
@@ -49,7 +61,7 @@ const TechStack = () => {
         {/* Outer scroll container (allows manual drag if desired) */}
         <div className="relative overflow-x-auto whitespace-nowrap scrollbar-hide cursor-grab active:cursor-grabbing">
           {/* Inner marquee container for continuous animation */}
-          <div className="animate-marquee flex gap-8 w-max">
+          <div className="animate-marquee flex gap-2 md:gap-10 w-max">
             {/* Duplicate tools to make infinite loop seamless */}
             {[...tools, ...tools].map((tool, index) => (
               <div
@@ -59,7 +71,7 @@ const TechStack = () => {
                 <img
                   src={tool.logo}
                   alt={tool.name}
-                  className="h-10 sm:h-12 w-auto object-contain"
+                  className="h-10 sm:h-12 md:h-18 w-auto object-contain"
                   draggable="false"
                 />
                 <span className="mt-3 text-sm text-gray-400 whitespace-nowrap">
