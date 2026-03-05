@@ -35,7 +35,7 @@ const PortfolioCard = ({ image, title, tags, link }) => {
         {/* View Button */}
         <a
           href={link}
-          className="mt-2 inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold rounded-full bg-[#8B5CF6] text-white hover:bg-[#7C3AED] transition"
+          className="mt-2 inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold rounded-full bg-[#1A73E8] text-white hover:bg-[#0965dd] transition"
         >
           VIEW <span>→</span>
         </a>

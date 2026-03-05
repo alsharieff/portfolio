@@ -23,7 +23,7 @@ const Stats = () => {
               className="flex flex-col items-center text-gray-400 relative"
             >
               {/* Number on top */}
-              <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#8B5CF6]">
+              <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#1A73E8]">
                 {stat.number}
               </span>
               {/* Label below */}

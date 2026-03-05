@@ -6,19 +6,19 @@ const SeoGrowth = () => {
     <section className="relative bg-[#0B0F19] py-24 overflow-hidden">
       {/* Violet Glow Background */}
       <div className="absolute inset-0 flex justify-center">
-        <div className="w-[600px] h-[600px] bg-[#8B5CF6]/10 blur-[120px] rounded-full"></div>
+        <div className="w-[600px] h-[600px] bg-[#1A73E8]/10 blur-[120px] rounded-full"></div>
       </div>
 
       <div className="relative mx-auto md:max-w-[960px] px-4 text-center">
         {/* Badge */}
-        <span className="inline-block text-[#8B5CF6] text-sm font-semibold uppercase tracking-widest">
+        <span className="inline-block text-[#1A73E8] text-sm font-semibold uppercase tracking-widest">
           Full-Spectrum SEO Strategy
         </span>
 
         {/* Headline */}
         <h2 className="mt-6 text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight max-w-4xl mx-auto">
           Built for Rankings. Designed for
-          <span className="text-[#8B5CF6]"> Sustainable Growth</span>
+          <span className="text-[#1A73E8]"> Sustainable Growth</span>
         </h2>
 
         {/* Description */}
@@ -65,13 +65,6 @@ const SeoGrowth = () => {
               long-term organic expansion.
             </p>
           </div>
-        </div>
-
-        {/* CTA */}
-        <div className="mt-16">
-          <button className="bg-[#8B5CF6] hover:bg-violet-500 text-white font-semibold px-8 py-3 rounded-lg transition-colors">
-            Dominate Search
-          </button>
         </div>
       </div>
     </section>

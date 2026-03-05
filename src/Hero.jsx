@@ -31,7 +31,7 @@ function Hero() {
             Alsharieff Kallun
           </h1>
 
-          <h2 className="text-xs sm:text-lg md:text-2xl text-[#8B5CF6] font-semibold">
+          <h2 className="text-xs sm:text-lg md:text-2xl font-semibold">
             <RoleBlink />
           </h2>
 
@@ -44,7 +44,7 @@ function Hero() {
           <div className="flex flex-row gap-2 sm:gap-4 mt-2 sm:mt-4 md:mt-6 justify-start">
             <a
               href="#portfolio"
-              className="bg-[#8B5CF6] hover:bg-[#7C3AED] text-white px-3 sm:px-4 md:px-6 py-2 sm:py-3 md:py-3 rounded-full font-semibold text-center transition-shadow shadow-md text-xs sm:text-sm md:text-base"
+              className="bg-[#1A73E8] hover:bg-[#0965dd] text-white px-3 sm:px-4 md:px-6 py-2 sm:py-3 md:py-3 rounded-full font-semibold text-center transition-shadow shadow-md text-xs sm:text-sm md:text-base"
             >
               Portfolio
             </a>

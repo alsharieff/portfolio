@@ -26,7 +26,7 @@ export default function AboutPage() {
           {/* Intro Paragraph */}
           <p className="text-gray-300 text-lg sm:text-xl leading-relaxed">
             I’m{" "}
-            <span className="font-semibold text-[#8B5CF6]">
+            <span className="font-semibold text-[#1A73E8]">
               Al-Sharieff K. Kallun
             </span>
             , a Technical SEO specialist with 2+ years of experience optimizing
@@ -48,7 +48,7 @@ export default function AboutPage() {
 
           {/* Skills Section */}
           <div className="mt-6">
-            <h2 className="text-2xl font-semibold text-[#8B5CF6] mb-4">
+            <h2 className="text-2xl font-semibold text-[#1A73E8] mb-4">
               Skills
             </h2>
 
@@ -67,7 +67,7 @@ export default function AboutPage() {
                   key={skill.label}
                   className="flex flex-col items-center min-w-[80px] text-center"
                 >
-                  <div className="text-[#8B5CF6]">{skill.icon}</div>
+                  <div className="text-[#1A73E8]">{skill.icon}</div>
                   <span className="text-white text-sm mt-2">{skill.label}</span>
                 </div>
               ))}

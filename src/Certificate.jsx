@@ -56,7 +56,7 @@ function Certificate() {
       <div className="mx-auto max-w-[960px] overflow-hidden">
         {/* Header */}
         <div className="mb-8 text-center">
-          <p className="text-sm font-medium text-[#8B5CF6] uppercase tracking-wider">
+          <p className="text-sm font-medium text-[#1A73E8] uppercase tracking-wider">
             Achievements
           </p>
           <h2 className="mt-2 text-3xl font-bold text-[#E5E7EB]">
@@ -91,7 +91,7 @@ function Certificate() {
                   {cert.issuer} • {cert.year}
                 </p>
 
-                <div className="mt-2 h-[2px] w-6 mx-auto bg-[#8B5CF6]" />
+                <div className="mt-2 h-[2px] w-6 mx-auto bg-[#1A73E8]" />
               </a>
             ))}
           </div>

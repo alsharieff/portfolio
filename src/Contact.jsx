@@ -18,12 +18,12 @@ const Contact = () => {
         </p>
 
         {/* Social Icons */}
-        <div className="flex justify-center gap-8 mb-12 text-[#8B5CF6]">
+        <div className="flex justify-center gap-8 mb-12 text-[#1A73E8]">
           <a
             href="https://github.com/yourusername"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-3xl transition-colors duration-300 hover:text-[#7C3AED]"
+            className="text-3xl transition-colors duration-300 hover:text-[#0965dd]"
             aria-label="GitHub"
           >
             <FaGithub />
@@ -32,7 +32,7 @@ const Contact = () => {
             href="https://linkedin.com/in/yourusername"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-3xl transition-colors duration-300 hover:text-[#7C3AED]"
+            className="text-3xl transition-colors duration-300 hover:text-[#0965dd]"
             aria-label="LinkedIn"
           >
             <FaLinkedin />
@@ -41,14 +41,14 @@ const Contact = () => {
             href="https://twitter.com/yourusername"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-3xl transition-colors duration-300 hover:text-[#7C3AED]"
+            className="text-3xl transition-colors duration-300 hover:text-[#0965dd]"
             aria-label="Twitter"
           >
             <FaTwitter />
           </a>
           <a
             href="mailto:your.email@example.com"
-            className="text-3xl transition-colors duration-300 hover:text-[#7C3AED]"
+            className="text-3xl transition-colors duration-300 hover:text-[#0965dd]"
             aria-label="Email"
           >
             <FaEnvelope />
@@ -61,7 +61,7 @@ const Contact = () => {
             <span className="font-semibold">Email:</span>{" "}
             <a
               href="mailto:alsharieffk@gmail.com"
-              className="text-[#8B5CF6] hover:underline"
+              className="text-[#1A73E8] hover:underline"
             >
               alsharieffk@gmail.com
             </a>
@@ -70,7 +70,7 @@ const Contact = () => {
             <span className="font-semibold">Phone:</span>{" "}
             <a
               href="tel:+639153450071"
-              className="text-[#8B5CF6] hover:underline"
+              className="text-[#1A73E8] hover:underline"
             >
               +63 915 345 0071
             </a>

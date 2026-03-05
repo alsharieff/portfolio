@@ -28,7 +28,7 @@ export default function ContactPage() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
-              className="hover:text-[#8B5CF6] transition"
+              className="hover:text-[#1A73E8] transition"
             >
               <FaGithub />
             </a>
@@ -37,7 +37,7 @@ export default function ContactPage() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="hover:text-[#8B5CF6] transition"
+              className="hover:text-[#1A73E8] transition"
             >
               <FaLinkedin />
             </a>
@@ -46,14 +46,14 @@ export default function ContactPage() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Twitter"
-              className="hover:text-[#8B5CF6] transition"
+              className="hover:text-[#1A73E8] transition"
             >
               <FaTwitter />
             </a>
             <a
               href="mailto:your.email@example.com"
               aria-label="Email"
-              className="hover:text-[#8B5CF6] transition"
+              className="hover:text-[#1A73E8] transition"
             >
               <FaEnvelope />
             </a>
@@ -65,7 +65,7 @@ export default function ContactPage() {
               <span className="font-semibold text-[#E5E7EB]">Email:</span>{" "}
               <a
                 href="mailto:alsharieffk@gmail.com"
-                className="text-[#8B5CF6] hover:underline"
+                className="text-[#1A73E8] hover:underline"
               >
                 alsharieffk@gmail.com
               </a>
@@ -74,7 +74,7 @@ export default function ContactPage() {
               <span className="font-semibold text-[#E5E7EB]">Phone:</span>{" "}
               <a
                 href="tel:+639153450071"
-                className="text-[#8B5CF6] hover:underline"
+                className="text-[#1A73E8] hover:underline"
               >
                 +63 915 345 0071
               </a>
@@ -87,7 +87,7 @@ export default function ContactPage() {
 
           {/* CTA Button */}
           <a href="mailto:alsharieffk@gmail.com">
-            <button className="px-6 py-3 rounded-full bg-[#8B5CF6] text-white font-medium hover:bg-[#7C3AED] transition shadow-md">
+            <button className="px-6 py-3 rounded-full bg-[#1A73E8] text-white font-medium hover:bg-[#0965dd] transition shadow-md">
               Send a Message
             </button>
           </a>

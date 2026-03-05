@@ -62,8 +62,8 @@ export default function PortfolioPage() {
               onClick={() => setFilter(cat)}
               className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
                 filter === cat
-                  ? "bg-[#8B5CF6] text-white"
-                  : "bg-[#111827] text-[#9CA3AF] border border-[#2A2F3A] hover:border-[#8B5CF6] hover:text-white"
+                  ? "bg-[#1A73E8] text-white"
+                  : "bg-[#111827] text-[#9CA3AF] border border-[#2A2F3A] hover:border-[#0965dd] hover:text-white"
               }`}
             >
               {cat}
@@ -74,7 +74,7 @@ export default function PortfolioPage() {
         {/* Projects */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {filteredProjects.map((project) => (
-            <div className="bg-[#1F2937] border border-[#2A2F3A] rounded-xl p-6 hover:border-[#8B5CF6] transition duration-300">
+            <div className="bg-[#1F2937] border border-[#2A2F3A] rounded-xl p-6 hover:border-[#0965dd] transition duration-300">
               <PortfolioCard {...project} />
             </div>
           ))}
@@ -88,7 +88,7 @@ export default function PortfolioPage() {
             </h3>
             <a
               href="#contact"
-              className="inline-block px-6 py-3 rounded-lg bg-[#8B5CF6] text-white text-sm font-medium hover:bg-[#7C3AED] transition"
+              className="inline-block px-6 py-3 rounded-lg bg-[#0965dd] text-white text-sm font-medium hover:bg-[#0965dd] transition"
             >
               Start a Conversation
             </a>
