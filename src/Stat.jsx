@@ -2,9 +2,9 @@
 import React from "react";
 
 const statsData = [
-  { number: "40+", label: "Site Build" },
-  { number: "20+", label: "Websites Optimized" },
-  { number: "90%", label: "Site Performance" },
+  { number: "100+", label: "Technical Fixes" },
+  { number: "20+", label: "Sites Optimized" },
+  { number: "90%", label: "PageSpeed Score" },
   { number: "2+", label: "Years Experience" },
 ];
 
@@ -23,7 +23,7 @@ const Stats = () => {
               className="flex flex-col items-center text-gray-400 relative"
             >
               {/* Number on top */}
-              <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#1A73E8]">
+              <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-400">
                 {stat.number}
               </span>
               {/* Label below */}

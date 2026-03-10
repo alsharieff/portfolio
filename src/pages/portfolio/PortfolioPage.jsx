@@ -3,6 +3,7 @@ import PortfolioCard from "./PortfolioCard";
 import portfolio from "../../assets/portfolio.png";
 import tti from "../../assets/tti-desktop.jpg";
 import dental from "../../assets/dental-desktop.png";
+import odd from "../../assets/odd.png";
 
 export default function PortfolioPage() {
   const [filter, setFilter] = useState("All Project");
@@ -14,7 +15,7 @@ export default function PortfolioPage() {
       category: "Others",
       tags: ["HTML", "Bootstrap", "CSS", "JavaScript"],
       image: portfolio,
-      link: "https://alsharieff.github.io/portfolio/",
+      link: "https://alsharieff.github.io/portfolio-static/",
     },
     {
       id: 2,
@@ -74,7 +75,7 @@ export default function PortfolioPage() {
         {/* Projects */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {filteredProjects.map((project) => (
-            <div className="bg-[#1F2937] border border-[#2A2F3A] rounded-xl p-6 hover:border-[#0965dd] transition duration-300">
+            <div>
               <PortfolioCard {...project} />
             </div>
           ))}

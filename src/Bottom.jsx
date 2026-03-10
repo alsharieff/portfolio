@@ -9,7 +9,7 @@ function Bottom() {
   return (
     <div
       className={`fixed bottom-0 right-0 md:hidden z-50
-        bg-[#7C3AED] rounded-tl-lg shadow-lg
+        bg-[#1A73E8] rounded-tl-lg shadow-lg
         transition-all duration-300 ease-out
         ${open ? "w-1/2 p-2" : "w-12 p-2"}`}
     >
