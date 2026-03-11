@@ -5,9 +5,7 @@ const SeoGrowth = () => {
   return (
     <section className="relative bg-[#0B0F19] py-24 overflow-hidden">
       {/* Violet Glow Background */}
-      <div className="absolute inset-0 flex justify-center">
-        <div className="w-[600px] h-[600px] bg-[#1A73E8]/10 blur-[120px] rounded-full"></div>
-      </div>
+      <div className="absolute inset-0 flex justify-center"></div>
 
       <div className="relative mx-auto md:max-w-[960px] px-4 text-center">
         {/* Badge */}

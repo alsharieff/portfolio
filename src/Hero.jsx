@@ -36,8 +36,10 @@ function Hero() {
           </h2>
 
           <p className="text-xs sm:text-sm md:text-lg text-[#9CA3AF] font-bold leading-relaxed">
-            Web developer & Technical SEO specialist creating user-friendly,
-            high-performing websites optimized for search and growth.
+            Building fast, SEO-optimized websites using AI-driven tools and
+            modern technologies. Passionate about learning new programming
+            languages, frameworks, and tools to stay ahead in web development
+            and SEO.
           </p>
 
           {/* Buttons */}

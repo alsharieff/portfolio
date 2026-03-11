@@ -3,6 +3,7 @@ import Stat from "../../Stat";
 import Services from "../../Services";
 import SeoTimeline from "../../SeoTimeline";
 import TechStack from "../../TechStack";
+import Scope from "../../Scope";
 import SeoResult from "../../SeoResult";
 import SeoGrowth from "../../SeoGrowth";
 import Certificate from "../../Certificate";
@@ -14,8 +15,9 @@ export default function HomePage() {
       <Hero />
       <Stat />
       <Services />
-      <SeoTimeline />
       <TechStack />
+      <SeoTimeline />
+      <Scope />
       {/* <SeoResult /> */}
       <SeoGrowth />
       <Certificate />
