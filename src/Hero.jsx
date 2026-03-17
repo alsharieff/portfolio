@@ -16,7 +16,7 @@ function Hero() {
       <div className="mx-auto px-4 max-w-[960px] flex flex-row items-center gap-4 md:gap-8">
         {/* Left: Profile Image (30%) */}
         <div className="w-[30%] flex justify-center">
-          <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-60 md:h-60 rounded-3xl overflow-hidden">
+          <div className="w-24 h-36 sm:w-32 sm:h-42 md:w-60 md:h-80 rounded-3xl overflow-hidden">
             <img
               src={picture}
               alt="Alsharieff Kallun"
