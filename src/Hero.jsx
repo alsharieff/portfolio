@@ -52,7 +52,7 @@ function Hero() {
             </a>
 
             <a
-              href="https://drive.google.com/file/d/1NpJx6RV1INEP4owb3PYNti5Sgc7ZkY7E/view?usp=drivesdk/"
+              href="https://drive.google.com/file/d/12-6QUX_Efd9Cuh9y_kFf59bcyIbJxdOS/view?usp=drivesdk"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#1F2937] hover:bg-[#2A2F3A] text-white px-3 sm:px-4 md:px-6 py-2 sm:py-3 md:py-3 rounded-full font-semibold flex items-center justify-center gap-1 sm:gap-2 md:gap-2 transition-shadow shadow-md text-xs sm:text-sm md:text-base"
