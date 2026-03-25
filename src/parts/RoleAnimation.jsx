@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export default function RoleBlink() {
-  const roles = ["Web Developer", "Technical SEO Specialist"];
+  const roles = ["SEO Specialist", "SEO Specialist"];
   const [index, setIndex] = useState(0);
   const [fade, setFade] = useState(true);
 
@@ -22,7 +22,7 @@ export default function RoleBlink() {
 
   return (
     <h2
-      className={`role-text text-lg md:text-2xl text-[#1A73E8] font-semibold mb-2 ${
+      className={`role-text text-lg md:text-2xl text-[#1A73E8] font-semibold tracking-wide mb-2 ${
         fade ? "fade-in" : "fade-out"
       }`}
     >

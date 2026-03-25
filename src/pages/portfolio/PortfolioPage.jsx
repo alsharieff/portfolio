@@ -78,7 +78,9 @@ function PortfolioPage() {
           <p className="text-xs uppercase tracking-[0.25em] text-gray-400">
             Portfolio
           </p>
-          <h1 className="text-3xl font-semibold mt-3">Websites I've Built</h1>
+          <h1 className="text-3xl font-semibold mt-3">
+            Web Development Portfolio
+          </h1>
         </div>
 
         {/* Grid: 1 column default, 2 columns from md upwards */}

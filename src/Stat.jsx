@@ -2,9 +2,9 @@
 import React from "react";
 
 const statsData = [
-  { number: "100+", label: "Technical Fixes" },
-  { number: "20+", label: "Sites Optimized" },
-  { number: "90%", label: "PageSpeed Score" },
+  { number: "40+", label: "Sites Built" },
+  { number: "20+", label: "Site Audits" },
+  { number: "70%", label: "Backlinks Built" },
   { number: "2+", label: "Years Experience" },
 ];
 

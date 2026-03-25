@@ -27,7 +27,7 @@ function Hero() {
 
         {/* Right: Content (70%) */}
         <div className="w-[70%] text-left space-y-2 sm:space-y-4 md:space-y-6">
-          <h1 className="text-lg sm:text-2xl md:text-5xl font-extrabold tracking-tight">
+          <h1 className="text-lg sm:text-2xl md:text-5xl font-extrabold tracking-wide">
             Alsharieff Kallun
           </h1>
 
