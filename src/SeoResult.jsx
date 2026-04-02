@@ -35,7 +35,7 @@ const SeoResult = () => {
       <div className="mx-auto md:max-w-[1200px] px-2 md:px-4">
         {/* Header */}
         <div className="mb-4">
-          <p className="text-lg md:text-5xl font-extrabold uppercase tracking-wide text-white">
+          <p className="text-lg md:text-3xl font-extrabold uppercase tracking-wide text-white text-center">
             Team SEO Results
           </p>
           {/* <h2 className="text-3xl md:text-4xl font-semibold leading-tight max-w-[600px]">

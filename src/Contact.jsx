@@ -9,7 +9,7 @@ const Contact = () => {
     >
       <div className="max-w-[1200px] px-2 md:px-4 mx-auto text-center">
         {/* Section Title */}
-        <h2 className="text-lg sm:text-2xl md:text-5xl font-extrabold tracking-wide mb-4">
+        <h2 className="text-lg sm:text-2xl md:text-3xl uppercase font-extrabold tracking-wide mb-4">
           Contact Me
         </h2>
         {/* Social Icons */}
@@ -51,7 +51,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Info Card */}
-        <div className="bg-[#1A1D23] p-6 rounded-xl mb-12 space-y-3 text-[#E5E7EB] shadow-md">
+        <div className="bg-[#101626] p-6 rounded-xl mb-12 space-y-3 text-[#E5E7EB] shadow-md">
           <p>
             <span className="font-semibold">Email:</span>{" "}
             <a

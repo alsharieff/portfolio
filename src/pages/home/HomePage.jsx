@@ -14,7 +14,7 @@ export default function HomePage() {
     <>
       <Hero />
       <TechStack />
-      <Stat />
+      {/* <Stat /> */}
       {/* <Services /> */}
       <SeoTimeline />
       {/* <Scope /> */}

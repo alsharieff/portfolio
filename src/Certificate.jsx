@@ -59,7 +59,7 @@ function Certificate() {
           <p className="text-sm font-medium text-[#1A73E8] uppercase tracking-wider">
             Achievements
           </p>
-          <h2 className="mt-2 text-lg sm:text-2xl md:text-5xl font-extrabold tracking-wide text-[#E5E7EB]">
+          <h2 className="mt-2 text-lg sm:text-2xl md:text-3xl uppercase font-extrabold tracking-wide text-[#E5E7EB]">
             Professional Credentials
           </h2>
         </div>
