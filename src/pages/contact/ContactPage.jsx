@@ -7,7 +7,7 @@ export default function ContactPage() {
       id="contact"
       className="min-h-screen flex items-center px-6 py-16 bg-[#0B0F19] text-[#E5E7EB] font-sans"
     >
-      <div className="mx-auto max-w-[960px] w-full grid md:grid-cols-2 gap-16 items-start">
+      <div className="mx-auto max-w-[1200px] w-full grid md:grid-cols-2 gap-16 items-start">
         {/* LEFT SIDE - Contact Info */}
         <div className="flex flex-col gap-8">
           {/* Heading */}

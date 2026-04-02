@@ -7,7 +7,7 @@ function Header() {
 
   return (
     <header className="bg-[#0B0F19] shadow-md sticky top-0 z-50">
-      <div className="container mx-auto md:max-w-[960px] flex items-center justify-between py-3 px-4">
+      <div className="container mx-auto md:max-w-[1200px] flex items-center justify-between py-3 px-4">
         {/* Logo */}
         <Link to="/" className="flex items-center">
           <div className="w-[120px] sm:w-[140px] md:w-[150px] h-[40px] sm:h-[60px] md:h-[80px] flex items-center justify-center">

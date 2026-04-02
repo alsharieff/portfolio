@@ -53,27 +53,27 @@ function Certificate() {
 
   return (
     <section className="py-16 bg-[#0B0F19]">
-      <div className="mx-auto max-w-[960px] overflow-hidden">
+      <div className="mx-auto max-w-[1200px] overflow-hidden px-2 md:px-4">
         {/* Header */}
         <div className="mb-8 text-center">
           <p className="text-sm font-medium text-[#1A73E8] uppercase tracking-wider">
             Achievements
           </p>
-          <h2 className="mt-2 text-3xl font-bold text-[#E5E7EB]">
+          <h2 className="mt-2 text-lg sm:text-2xl md:text-5xl font-extrabold tracking-wide text-[#E5E7EB]">
             Professional Credentials
           </h2>
         </div>
 
         {/* Marquee */}
         <div className="overflow-hidden">
-          <div className="flex animate-marquee gap-6">
+          <div className="flex animate-marquee gap-2 md:gap-6">
             {certificates.concat(certificates).map((cert, index) => (
               <a
                 key={index}
                 href={cert.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-shrink-0 w-[180px] bg-[#111827] rounded-2xl p-4 text-center"
+                className="flex-shrink-0 w-[180px] bg-[#111827] rounded-2xl p-2 md:p-4 text-center"
               >
                 {/* Image 100% width */}
                 <div className="w-full bg-[#0F172A] rounded-lg mb-4">
@@ -84,10 +84,10 @@ function Certificate() {
                   />
                 </div>
 
-                <h3 className="text-sm font-semibold text-[#E5E7EB] leading-snug">
+                <h3 className="text-[12px] md:text-sm font-semibold text-[#E5E7EB] leading-snug">
                   {cert.title}
                 </h3>
-                <p className="mt-1 text-xs text-gray-400">
+                <p className="mt-1 text-[10px] md:text-xs text-gray-400">
                   {cert.issuer} • {cert.year}
                 </p>
 

@@ -12,8 +12,8 @@ import RoleBlink from "./parts/RoleAnimation.jsx";
 
 function Hero() {
   return (
-    <section className="py-8 md:py-12 bg-[#0B0F19] text-[#E5E7EB]">
-      <div className="mx-auto px-4 max-w-[960px] flex flex-row items-center gap-4 md:gap-8">
+    <section className="py-8 md:py-24 bg-[#0B0F19] text-[#E5E7EB]">
+      <div className="mx-auto px-2 md:px-4 max-w-[1200px] flex flex-row items-center gap-4 md:gap-8">
         {/* Left: Profile Image (30%) */}
         <div className="w-[30%] flex justify-center">
           <div className="w-24 h-36 sm:w-32 sm:h-42 md:w-60 md:h-80 rounded-3xl overflow-hidden">
@@ -46,7 +46,7 @@ function Hero() {
           <div className="flex flex-row gap-2 sm:gap-4 mt-2 sm:mt-4 md:mt-6 justify-start">
             <a
               href="#portfolio"
-              className="bg-[#1A73E8] hover:bg-[#0965dd] text-white px-3 sm:px-4 md:px-6 py-2 sm:py-3 md:py-3 rounded-full font-semibold text-center transition-shadow shadow-md text-xs sm:text-sm md:text-base"
+              className="bg-[#1A73E8] hover:bg-[#0965dd] text-white px-3 py-2 sm:px-4 sm:py-3 rounded-full font-semibold text-center transition-shadow shadow-md text-[10px] md:text-sm"
             >
               Portfolio
             </a>
@@ -55,7 +55,7 @@ function Hero() {
               href="https://drive.google.com/file/d/12-6QUX_Efd9Cuh9y_kFf59bcyIbJxdOS/view?usp=drivesdk"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#1F2937] hover:bg-[#2A2F3A] text-white px-3 sm:px-4 md:px-6 py-2 sm:py-3 md:py-3 rounded-full font-semibold flex items-center justify-center gap-1 sm:gap-2 md:gap-2 transition-shadow shadow-md text-xs sm:text-sm md:text-base"
+              className="bg-[#1F2937] hover:bg-[#2A2F3A] text-white px-3 sm:px-4 md:px-6 py-2 sm:py-3 md:py-3 rounded-full font-semibold flex items-center justify-center gap-1 sm:gap-2 md:gap-2 transition-shadow shadow-md text-[10px] md:text-sm"
             >
               <svg
                 className="w-3 sm:w-4 md:w-5 h-3 sm:h-4 md:h-5"

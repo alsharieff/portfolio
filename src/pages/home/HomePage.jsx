@@ -13,13 +13,13 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <Stat />
-      <Services />
       <TechStack />
+      <Stat />
+      {/* <Services /> */}
       <SeoTimeline />
-      <Scope />
-      {/* <SeoResult /> */}
-      <SeoGrowth />
+      {/* <Scope /> */}
+      <SeoResult />
+      {/* <SeoGrowth /> */}
       <Certificate />
       <Contact />
     </>

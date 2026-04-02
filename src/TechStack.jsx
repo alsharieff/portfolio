@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import gsc from "./assets/tools/gsc.png";
 import ahrefs from "./assets/tools/ahref.png";
-import semrush from "./assets/tools/semrush.png";
 import screamingfrog from "./assets/tools/screamingfrog.png";
 import pagespeed from "./assets/tools/pagespeed.svg";
 import wordpress from "./assets/tools/wordpress.png";
@@ -17,7 +16,6 @@ import vscode from "./assets/tools/vscode.png";
 const tools = [
   { name: "Google Search Console", logo: gsc },
   { name: "Ahrefs", logo: ahrefs },
-  { name: "Semrush", logo: semrush },
   { name: "Screaming Frog", logo: screamingfrog },
   { name: "PageSpeed Insights", logo: pagespeed },
   { name: "WordPress", logo: wordpress },
@@ -58,8 +56,8 @@ const TechStack = () => {
   }, []);
 
   return (
-    <section className="bg-[#0B0F19] py-16">
-      <div className="max-w-[1100px] mx-auto px-4">
+    <section className="bg-[#0B0F19]">
+      <div className="max-w-[1200px] mx-auto px-2 md:px-4">
         {/* <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-12">
           Tools & Tech Stack
         </h2> */}
@@ -67,20 +65,20 @@ const TechStack = () => {
         {/* Outer scroll container (allows manual drag if desired) */}
         <div className="relative overflow-x-auto whitespace-nowrap scrollbar-hide cursor-grab active:cursor-grabbing">
           {/* Inner marquee container for continuous animation */}
-          <div className="animate-marquee flex gap-2 md:gap-10 w-max">
+          <div className="animate-marquee flex gap-1 md:gap-4 w-max">
             {/* Duplicate tools to make infinite loop seamless */}
             {[...tools, ...tools].map((tool, index) => (
               <div
                 key={index}
-                className="min-w-[160px] py-4 px-6 flex flex-col items-center"
+                className="min-w-[140px] py-2 px-1 flex flex-col items-center"
               >
                 <img
                   src={tool.logo}
                   alt={tool.name}
-                  className="h-10 sm:h-12 md:h-18 w-auto object-contain"
+                  className="h-6 sm:h-8 md:h-10 object-contain"
                   draggable="false"
                 />
-                <span className="mt-3 text-sm text-gray-400 whitespace-nowrap">
+                <span className="mt-3 text-[10px] md:text-sm text-gray-400 whitespace-nowrap">
                   {tool.name}
                 </span>
               </div>

@@ -3,9 +3,9 @@ import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="bg-[#0a0a0a] text-gray-300 pt-10 pb-6 px-6 md:px-12 lg:px-20">
+    <footer className="bg-[#0a0a0a] text-gray-300 pt-10 pb-6 ">
       {/* Top Divider */}
-      <div className="w-full h-[1px] bg-gray-700 mb-8" />
+      <div className="max-w-[1200px] mx-auto px-4 h-[1px] bg-gray-700 mb-8" />
 
       {/* Links and Socials */}
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">

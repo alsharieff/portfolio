@@ -12,8 +12,8 @@ const steps = [
 const SeoTimeline = () => {
   return (
     <section className="bg-[#0B0F19] py-12">
-      <div className="max-w-[960px] mx-auto px-4">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white text-center mb-8">
+      <div className="max-w-[1200px] mx-auto  px-2 md:px-4">
+        <h2 className="text-lg sm:text-2xl md:text-5xl font-extrabold tracking-wide text-white text-center mb-8">
           SEO Process
         </h2>
 

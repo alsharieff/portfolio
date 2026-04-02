@@ -7,7 +7,7 @@ const SeoGrowth = () => {
       {/* Violet Glow Background */}
       <div className="absolute inset-0 flex justify-center"></div>
 
-      <div className="relative mx-auto md:max-w-[960px] px-4 text-center">
+      <div className="relative mx-auto md:max-w-[1200px] px-4 text-center">
         {/* Badge */}
         <span className="inline-block text-[#1A73E8] text-sm font-semibold uppercase tracking-widest">
           Full-Spectrum SEO Strategy

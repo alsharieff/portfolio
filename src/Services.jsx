@@ -32,7 +32,7 @@ const servicesData = [
 const Services = () => {
   return (
     <section className="bg-[#0B0F19] py-16" aria-labelledby="services-heading">
-      <div className="max-w-[960px] mx-auto px-4">
+      <div className="max-w-[1200px] mx-auto px-4">
         {/* Heading with left & right lines */}
         <h2
           id="services-heading"

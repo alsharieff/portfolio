@@ -4,19 +4,14 @@ import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
 const Contact = () => {
   return (
     <section
-      className="py-16 px-6 md:px-12 lg:px-20 bg-[#0B0F19] text-[#E5E7EB]"
+      className="py-16 md:px-12 lg:px-20 bg-[#0B0F19] text-[#E5E7EB]"
       id="contact"
     >
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="max-w-[1200px] px-2 md:px-4 mx-auto text-center">
         {/* Section Title */}
-        <h2 className="text-4xl sm:text-5xl font-bold mb-4 tracking-wide">
+        <h2 className="text-lg sm:text-2xl md:text-5xl font-extrabold tracking-wide mb-4">
           Contact Me
         </h2>
-        <p className="text-gray-400 mb-10 sm:mb-16 text-base sm:text-lg">
-          Reach out for collaborations, freelance projects, or just to connect.
-          Let’s build something amazing together!
-        </p>
-
         {/* Social Icons */}
         <div className="flex justify-center gap-8 mb-12 text-[#1A73E8]">
           <a

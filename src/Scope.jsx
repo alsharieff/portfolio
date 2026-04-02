@@ -44,7 +44,7 @@ const services = [
 function Scope() {
   return (
     <section className="bg-[#0B0F19] text-white py-20">
-      <div className="max-w-[960px] mx-auto px-6">
+      <div className="max-w-[1200px] mx-auto px-6">
         {/* Header */}
         <div className="mb-14 max-w-[620px]">
           <h2 className="text-3xl font-semibold mb-4">

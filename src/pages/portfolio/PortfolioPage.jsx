@@ -1,4 +1,6 @@
 import React from "react";
+import desktopshoesshop from "../../assets/portfolio/desktop-shoes-shop.webp";
+import mobileshoesshop from "../../assets/portfolio/mobile-shoes-shop.webp";
 import PortfolioCard from "./PortfolioCard";
 import desktopodd from "../../assets/portfolio/desktop-the-sports-odds.webp";
 import mobileodd from "../../assets/portfolio/mobile-the-sports-odds.webp";
@@ -15,9 +17,14 @@ import mobilecasinoreview from "../../assets/portfolio/mobile-casinoreview.webp"
 
 const projects = [
   {
+    title: "Online Shoes shop and blogs (progress)",
+    desktopImage: desktopshoesshop, // swapped to correct
+    mobileImage: mobileshoesshop,
+    tech: ["Wordpress", "php", "html", "css", "javascript"],
+    url: "https://drive.google.com/file/d/1rekydBFH3VBP4-Z5ZaoVLpsV3CnxpWxX/view?usp=drive_link",
+  },
+  {
     title: "The Sports Odds News Blog",
-    description:
-      "Stay updated with the latest sports odds, betting insights, and news. Expert analysis for smarter sports betting decisions.",
     desktopImage: desktopodd, // swapped to correct
     mobileImage: mobileodd,
     tech: ["Wordpress", "html", "css", "javascript"],
@@ -25,8 +32,6 @@ const projects = [
   },
   {
     title: "Talk Time India News Blogs",
-    description:
-      "Stay updated with Talk Time India for news, tech reviews, lottery results, and cricket scores. Explore astrology, business, and games sections daily.",
     desktopImage: desktoptalktimeindia, // swapped to correct
     mobileImage: mobiletalktimeindia,
     tech: ["Wordpress", "html", "css", "javascript"],
@@ -34,8 +39,6 @@ const projects = [
   },
   {
     title: "My Personal Portfolio Onepage",
-    description:
-      "Showcase of my work, skills, and projects in a single-page personal portfolio. Clean design, responsive layout, and professional presentation.",
     desktopImage: desktopportfolio, // swapped to correct
     mobileImage: mobileportfolio,
     tech: ["html", "css", "javascript", "Bootstrap", "Github"],
@@ -43,8 +46,6 @@ const projects = [
   },
   {
     title: "Dentist in Pickerington, OH | Ohio Family Dentistry",
-    description:
-      "Ohio Family Dentistry is a skilled Dentist in Pickerington, OH. Accepting new appointments. Call today or request an appointment on our website.",
     desktopImage: desktopdentist, // swapped to correct
     mobileImage: mobiledentist,
     tech: ["html", "css", "javascript", "Bootstrap"],
@@ -52,8 +53,6 @@ const projects = [
   },
   {
     title: "Igaming review casino site",
-    description:
-      "Trusted casino ratings, bonus breakdowns, and expert tips. Find safe platforms, top offers, and daily updates to play smarter in 2025.",
     desktopImage: desktopjackpotreview, // swapped to correct
     mobileImage: mobilejackpotreview,
     tech: ["html", "css", "javascript", "Bootstrap"],
@@ -61,8 +60,6 @@ const projects = [
   },
   {
     title: "Igaming sportsbook review casino site",
-    description:
-      "Trusted casino ratings, bonus breakdowns, and expert tips. Find safe platforms, top offers, and daily updates to play smarter in 2025.",
     desktopImage: desktopcasinoreview, // swapped to correct
     mobileImage: mobilecasinoreview,
     tech: ["html", "css", "javascript", "Bootstrap"],
@@ -72,19 +69,19 @@ const projects = [
 
 function PortfolioPage() {
   return (
-    <section className="bg-[#0B0F19] text-white py-20">
-      <div className="mx-auto max-w-[960px] px-6">
-        <div className="">
+    <section className="bg-[#0B0F19] text-white py-8 sm:py-12 md:py-17 lg:py-20">
+      <div className="mx-auto max-w-[1200px] px-2 md:px-4">
+        <div className="text-center">
           <p className="text-xs uppercase tracking-[0.25em] text-gray-400">
             Portfolio
           </p>
-          <h1 className="text-3xl font-semibold mt-3">
-            Web Development Portfolio
+          <h1 className="text-lg md:text-4xl font-extrabold uppercase tracking-wide text-white my-3">
+            Web Development
           </h1>
         </div>
 
         {/* Grid: 1 column default, 2 columns from md upwards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-12">
           {projects.map((project, index) => (
             <PortfolioCard key={index} project={project} />
           ))}

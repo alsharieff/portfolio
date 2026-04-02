@@ -15,7 +15,7 @@ import { SiTailwindcss } from "react-icons/si";
 export default function AboutPage() {
   return (
     <section className="min-h-screen flex items-center bg-[#0B0F19] px-6 py-16 font-sans text-[#E5E7EB]">
-      <div className="mx-auto max-w-[960px] w-full grid md:grid-cols-2 gap-12 items-center">
+      <div className="mx-auto max-w-[1200px] w-full grid md:grid-cols-2 gap-12 items-center">
         {/* LEFT SIDE - Intro Text */}
         <div className="space-y-6 text-center md:text-left">
           {/* Heading */}
