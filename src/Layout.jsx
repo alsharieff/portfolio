@@ -1,6 +1,5 @@
 import Header from "./Header";
 import Footer from "./Footer";
-import Bottom from "./Bottom";
 
 export default function Layout({ children }) {
   return (
@@ -8,7 +7,6 @@ export default function Layout({ children }) {
       <Header />
       <main className="flex-grow">{children}</main>
       <Footer />
-      <Bottom />
     </div>
   );
 }

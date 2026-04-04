@@ -58,7 +58,7 @@ const TechStack = () => {
   }, []);
 
   return (
-    <section className="bg-[#0B0F19] pb-12 md:pb-28">
+    <section className="bg-[#0B0F19] py-12 md:pb-28">
       <div className="bg-[#101626] max-w-[1200px] mx-auto p-2 md:px-4 rounded-lg">
         {/* <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-12">
           Tools & Tech Stack

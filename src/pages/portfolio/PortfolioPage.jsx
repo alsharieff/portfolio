@@ -21,7 +21,7 @@ const projects = [
     desktopImage: desktopshoesshop, // swapped to correct
     mobileImage: mobileshoesshop,
     tech: ["Wordpress", "php", "html", "css", "javascript"],
-    url: "https://drive.google.com/file/d/1rekydBFH3VBP4-Z5ZaoVLpsV3CnxpWxX/view?usp=drive_link",
+    url: "https://drive.google.com/file/d/1z7cqsxJMmSdhZVjutX4HRS7R21DlfJ0A/view?usp=drive_link",
   },
   {
     title: "The Sports Odds News Blog",

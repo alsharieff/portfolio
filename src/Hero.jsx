@@ -1,6 +1,5 @@
 import React from "react";
 import picture from "./assets/profile.png";
-import RoleBlink from "./parts/RoleAnimation.jsx";
 
 // Reminder for deployment to push main
 // 1. git add .
@@ -12,7 +11,7 @@ import RoleBlink from "./parts/RoleAnimation.jsx";
 
 function Hero() {
   return (
-    <section className="py-8 md:py-24 bg-[#0B0F19] text-[#E5E7EB]">
+    <section className="py-16 md:py-28 bg-[#0B0F19] text-[#E5E7EB]">
       <div className="mx-auto px-2 md:px-4 max-w-[1200px] flex flex-row items-center gap-4 md:gap-8">
         {/* Left: Profile Image (30%) */}
         <div className="w-[30%] flex justify-center">
@@ -27,12 +26,12 @@ function Hero() {
 
         {/* Right: Content (70%) */}
         <div className="w-[70%] text-left space-y-2 sm:space-y-4 md:space-y-6">
-          <h1 className="text-lg sm:text-2xl md:text-5xl font-extrabold tracking-wide">
+          <h1 className="text-lg sm:text-2xl md:text-5xl font-extrabold tracking-wide uppercase">
             Alsharieff Kallun
           </h1>
 
-          <h2 className="text-xs sm:text-lg md:text-2xl font-semibold">
-            <RoleBlink />
+          <h2 className="text-sm md:text-2xl font-extrabold tracking-wide uppercase">
+            SEP Specialist
           </h2>
 
           <p className="text-xs sm:text-sm md:text-lg text-[#9CA3AF] font-bold leading-relaxed">
