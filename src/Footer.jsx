@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="bg-[#0a0a0a] text-gray-300 pt-10 pb-6 ">
+    <footer className="bg-[#0B0F19] text-gray-200 pt-10 pb-6 ">
       {/* Top Divider */}
       <div className="max-w-[1200px] mx-auto px-4 h-[1px] bg-gray-700 mb-8" />
 

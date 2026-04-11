@@ -1,8 +1,7 @@
 import React from "react";
 import Indexed from "./assets/indexed.jpg";
 import DA from "./assets/DAPA.jpg";
-import Metrix from "./assets/performance.jpg";
-import Rank from "./assets/rank.jpg";
+import metrix from "./assets/metrix.jpg";
 import { TrendingUp, Link2, BarChart3, Trophy } from "lucide-react";
 import {
   LineChart,
@@ -110,9 +109,10 @@ const SeoResult = () => {
               <Trophy className="text-[#1A73E8]" size={20} />
               <h3 className="font-semibold text-lg">Top Ranking Keywords</h3>
             </div>
-            <p className="text-xl font-semibold mb-4">Brand Keywords</p>
+            <p className="text-xl font-semibold mb-2">Brand Keywords</p>
+            <p className="text-sm text-gray-400 mb-4">90 | 91 | 100 | 100</p>
             <img
-              src={Rank}
+              src={metrix}
               alt="Keyword Rankings Screenshot"
               className="w-full h-50 object-cover rounded-lg mb-4"
             />

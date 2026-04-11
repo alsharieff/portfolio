@@ -1,6 +1,7 @@
 // AboutPage.jsx
 import React from "react";
 import About from "../../assets/about.png";
+import About1 from "../../assets/about1.jpg";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -33,25 +34,22 @@ export default function AboutPage() {
   ];
 
   return (
-    <section className="min-h-screen flex items-center bg-[#030712] px-6 py-20 font-sans text-gray-200 selection:bg-indigo-500/30">
+    <section className="min-h-screen flex items-center bg-[#0B0F19] px-6 py-20 font-sans text-gray-200 selection:bg-indigo-500/30">
       <div className="mx-auto max-w-[1200px] w-full grid lg:grid-cols-2 gap-16 items-center">
         {/* LEFT SIDE - Content */}
         <div className="order-2 lg:order-1 space-y-8">
           <div className="space-y-4">
             {/* Status Badge */}
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-medium tracking-wide uppercase">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-ray-800 border border-indigo-500/20 text-indigo-400 text-xs font-medium tracking-wide uppercase">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2"></span>
               </span>
-              Available for new projects
+              good team work
             </div>
 
             <h1 className="text-5xl md:text-6xl font-black text-white tracking-tighter">
-              About{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">
-                Me.
-              </span>
+              About Me.
             </h1>
 
             <div className="space-y-4 text-gray-400 text-lg leading-relaxed max-w-xl">
@@ -102,16 +100,16 @@ export default function AboutPage() {
         {/* RIGHT SIDE - Visual */}
         <div className="order-1 lg:order-2 relative group">
           {/* Decorative Background Elements */}
-          <div className="absolute -inset-4 bg-gradient-to-tr from-indigo-500/20 to-cyan-500/20 rounded-[2rem] blur-2xl group-hover:blur-3xl transition-all duration-500"></div>
+          <div className="absolute rounded-[2rem] blur-2xl group-hover:blur-3xl transition-all duration-500"></div>
 
           <div className="relative aspect-square md:aspect-auto md:h-[500px] rounded-[2rem] border border-white/10 bg-gray-900/50 backdrop-blur-sm overflow-hidden shadow-2xl">
             {/* Abstract Grid Pattern Overlay */}
             <div className="absolute inset-0 opacity-10 [background-image:linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] [background-size:40px_40px]"></div>
 
             <img
-              src={About}
+              src={About1}
               alt="Al-Sharieff"
-              className="relative w-full h-full object-contain p-8 group-hover:scale-105 transition-transform duration-700 ease-out"
+              className="relative w-full h-full object-contain p-8"
             />
           </div>
 
